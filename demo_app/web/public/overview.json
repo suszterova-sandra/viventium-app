@@ -1,0 +1,907 @@
+{
+ "host": "https://sandrasuszterova.demo.cloud.gooddata.com",
+ "parent": "a60f79ad0a99473fafe4d043228d5bd7",
+ "reportId": "dp_payroll_report",
+ "workspaces": [
+  {
+   "id": "a60f79ad0a99473fafe4d043228d5bd7",
+   "name": "Viventium",
+   "isParent": true,
+   "themeId": "viventium",
+   "permissions": [],
+   "hierarchyPermissions": [],
+   "dashboards": [
+    {
+     "id": "p01_applicant_tracking",
+     "title": "1. Applicant Tracking"
+    },
+    {
+     "id": "p02_onboarding",
+     "title": "2. Onboarding"
+    },
+    {
+     "id": "p03_scheduling",
+     "title": "3. Scheduling"
+    },
+    {
+     "id": "p04_time_attendance",
+     "title": "4. Time & Attendance"
+    },
+    {
+     "id": "p05_payroll",
+     "title": "5. Payroll"
+    },
+    {
+     "id": "p06_on_demand_pay",
+     "title": "6. On-Demand Pay"
+    },
+    {
+     "id": "p07_benefits",
+     "title": "7. Benefits Administration"
+    },
+    {
+     "id": "p08_aca",
+     "title": "8. ACA Compliance"
+    },
+    {
+     "id": "p09_lms",
+     "title": "9. Learning (LMS)"
+    },
+    {
+     "id": "p10_exclusion_monitoring",
+     "title": "10. Exclusion Monitoring"
+    },
+    {
+     "id": "p11_hr",
+     "title": "11. HR & Workforce"
+    }
+   ]
+  },
+  {
+   "id": "hearthside",
+   "name": "HearthSide Home Care \u00b7 Analytics tier (dedicated)",
+   "isParent": false,
+   "themeId": "viventium_hearthside",
+   "permissions": [
+    {
+     "name": "ANALYZE",
+     "assignee": {
+      "id": "viv.hearthside.scheduler",
+      "type": "user"
+     }
+    },
+    {
+     "name": "EXPORT",
+     "assignee": {
+      "id": "viv.hearthside.scheduler",
+      "type": "user"
+     }
+    }
+   ],
+   "hierarchyPermissions": [],
+   "dashboards": [
+    {
+     "id": "p01_applicant_tracking",
+     "title": "1. Applicant Tracking"
+    },
+    {
+     "id": "p02_onboarding",
+     "title": "2. Onboarding"
+    },
+    {
+     "id": "p03_scheduling",
+     "title": "3. Scheduling"
+    },
+    {
+     "id": "p04_time_attendance",
+     "title": "4. Time & Attendance"
+    },
+    {
+     "id": "p05_payroll",
+     "title": "5. Payroll"
+    },
+    {
+     "id": "p06_on_demand_pay",
+     "title": "6. On-Demand Pay"
+    },
+    {
+     "id": "p07_benefits",
+     "title": "7. Benefits Administration"
+    },
+    {
+     "id": "p08_aca",
+     "title": "8. ACA Compliance"
+    },
+    {
+     "id": "p09_lms",
+     "title": "9. Learning (LMS)"
+    },
+    {
+     "id": "p10_exclusion_monitoring",
+     "title": "10. Exclusion Monitoring"
+    },
+    {
+     "id": "p11_hr",
+     "title": "11. HR & Workforce"
+    }
+   ]
+  },
+  {
+   "id": "littleoak",
+   "name": "Little Oak Behavioral Health",
+   "isParent": false,
+   "themeId": "viventium_littleoak",
+   "permissions": [],
+   "hierarchyPermissions": [],
+   "dashboards": [
+    {
+     "id": "p01_applicant_tracking",
+     "title": "1. Applicant Tracking"
+    },
+    {
+     "id": "p02_onboarding",
+     "title": "2. Onboarding"
+    },
+    {
+     "id": "p03_scheduling",
+     "title": "3. Scheduling"
+    },
+    {
+     "id": "p04_time_attendance",
+     "title": "4. Time & Attendance"
+    },
+    {
+     "id": "p05_payroll",
+     "title": "5. Payroll"
+    },
+    {
+     "id": "p06_on_demand_pay",
+     "title": "6. On-Demand Pay"
+    },
+    {
+     "id": "p07_benefits",
+     "title": "7. Benefits Administration"
+    },
+    {
+     "id": "p08_aca",
+     "title": "8. ACA Compliance"
+    },
+    {
+     "id": "p09_lms",
+     "title": "9. Learning (LMS)"
+    },
+    {
+     "id": "p10_exclusion_monitoring",
+     "title": "10. Exclusion Monitoring"
+    },
+    {
+     "id": "p11_hr",
+     "title": "11. HR & Workforce"
+    }
+   ]
+  },
+  {
+   "id": "maplehollow",
+   "name": "Maple Hollow Senior Living",
+   "isParent": false,
+   "themeId": "viventium_maplehollow",
+   "permissions": [],
+   "hierarchyPermissions": [],
+   "dashboards": [
+    {
+     "id": "p01_applicant_tracking",
+     "title": "1. Applicant Tracking"
+    },
+    {
+     "id": "p02_onboarding",
+     "title": "2. Onboarding"
+    },
+    {
+     "id": "p03_scheduling",
+     "title": "3. Scheduling"
+    },
+    {
+     "id": "p04_time_attendance",
+     "title": "4. Time & Attendance"
+    },
+    {
+     "id": "p05_payroll",
+     "title": "5. Payroll"
+    },
+    {
+     "id": "p06_on_demand_pay",
+     "title": "6. On-Demand Pay"
+    },
+    {
+     "id": "p07_benefits",
+     "title": "7. Benefits Administration"
+    },
+    {
+     "id": "p08_aca",
+     "title": "8. ACA Compliance"
+    },
+    {
+     "id": "p09_lms",
+     "title": "9. Learning (LMS)"
+    },
+    {
+     "id": "p10_exclusion_monitoring",
+     "title": "10. Exclusion Monitoring"
+    },
+    {
+     "id": "p11_hr",
+     "title": "11. HR & Workforce"
+    }
+   ]
+  },
+  {
+   "id": "riverstone",
+   "name": "Riverstone Health Partners \u00b7 AI tier (dedicated)",
+   "isParent": false,
+   "themeId": "viventium_riverstone",
+   "permissions": [
+    {
+     "name": "ANALYZE",
+     "assignee": {
+      "id": "viv.riverstone.payroll",
+      "type": "user"
+     }
+    },
+    {
+     "name": "CREATE_AUTOMATION",
+     "assignee": {
+      "id": "viv.riverstone.payroll",
+      "type": "user"
+     }
+    },
+    {
+     "name": "EXPORT",
+     "assignee": {
+      "id": "viv.riverstone.payroll",
+      "type": "user"
+     }
+    },
+    {
+     "name": "USE_AI_ASSISTANT",
+     "assignee": {
+      "id": "viv.riverstone.payroll",
+      "type": "user"
+     }
+    },
+    {
+     "name": "USE_AI_ASSISTANT",
+     "assignee": {
+      "id": "viv.riverstone.recruiter",
+      "type": "user"
+     }
+    },
+    {
+     "name": "VIEW",
+     "assignee": {
+      "id": "viv.riverstone.recruiter",
+      "type": "user"
+     }
+    }
+   ],
+   "hierarchyPermissions": [],
+   "dashboards": [
+    {
+     "id": "p01_applicant_tracking",
+     "title": "1. Applicant Tracking"
+    },
+    {
+     "id": "p02_onboarding",
+     "title": "2. Onboarding"
+    },
+    {
+     "id": "p03_scheduling",
+     "title": "3. Scheduling"
+    },
+    {
+     "id": "p04_time_attendance",
+     "title": "4. Time & Attendance"
+    },
+    {
+     "id": "p05_payroll",
+     "title": "5. Payroll"
+    },
+    {
+     "id": "p06_on_demand_pay",
+     "title": "6. On-Demand Pay"
+    },
+    {
+     "id": "p07_benefits",
+     "title": "7. Benefits Administration"
+    },
+    {
+     "id": "p08_aca",
+     "title": "8. ACA Compliance"
+    },
+    {
+     "id": "p09_lms",
+     "title": "9. Learning (LMS)"
+    },
+    {
+     "id": "p10_exclusion_monitoring",
+     "title": "10. Exclusion Monitoring"
+    },
+    {
+     "id": "p11_hr",
+     "title": "11. HR & Workforce"
+    }
+   ]
+  },
+  {
+   "id": "shard_base_01",
+   "name": "Base Shard 01 \u00b7 shared (view only)",
+   "isParent": false,
+   "themeId": "viventium",
+   "permissions": [
+    {
+     "name": "VIEW",
+     "assignee": {
+      "id": "viv.littleoak.scheduler",
+      "type": "user"
+     }
+    },
+    {
+     "name": "VIEW",
+     "assignee": {
+      "id": "viv.maplehollow.payroll",
+      "type": "user"
+     }
+    },
+    {
+     "name": "VIEW",
+     "assignee": {
+      "id": "viv.willowbend.hr",
+      "type": "user"
+     }
+    }
+   ],
+   "hierarchyPermissions": [],
+   "dashboards": [
+    {
+     "id": "p01_applicant_tracking",
+     "title": "1. Applicant Tracking"
+    },
+    {
+     "id": "p02_onboarding",
+     "title": "2. Onboarding"
+    },
+    {
+     "id": "p03_scheduling",
+     "title": "3. Scheduling"
+    },
+    {
+     "id": "p04_time_attendance",
+     "title": "4. Time & Attendance"
+    },
+    {
+     "id": "p05_payroll",
+     "title": "5. Payroll"
+    },
+    {
+     "id": "p06_on_demand_pay",
+     "title": "6. On-Demand Pay"
+    },
+    {
+     "id": "p07_benefits",
+     "title": "7. Benefits Administration"
+    },
+    {
+     "id": "p08_aca",
+     "title": "8. ACA Compliance"
+    },
+    {
+     "id": "p09_lms",
+     "title": "9. Learning (LMS)"
+    },
+    {
+     "id": "p10_exclusion_monitoring",
+     "title": "10. Exclusion Monitoring"
+    },
+    {
+     "id": "p11_hr",
+     "title": "11. HR & Workforce"
+    }
+   ]
+  },
+  {
+   "id": "willowbend",
+   "name": "Willowbend Home Health & Hospice",
+   "isParent": false,
+   "themeId": "viventium_willowbend",
+   "permissions": [],
+   "hierarchyPermissions": [],
+   "dashboards": [
+    {
+     "id": "p01_applicant_tracking",
+     "title": "1. Applicant Tracking"
+    },
+    {
+     "id": "p02_onboarding",
+     "title": "2. Onboarding"
+    },
+    {
+     "id": "p03_scheduling",
+     "title": "3. Scheduling"
+    },
+    {
+     "id": "p04_time_attendance",
+     "title": "4. Time & Attendance"
+    },
+    {
+     "id": "p05_payroll",
+     "title": "5. Payroll"
+    },
+    {
+     "id": "p06_on_demand_pay",
+     "title": "6. On-Demand Pay"
+    },
+    {
+     "id": "p07_benefits",
+     "title": "7. Benefits Administration"
+    },
+    {
+     "id": "p08_aca",
+     "title": "8. ACA Compliance"
+    },
+    {
+     "id": "p09_lms",
+     "title": "9. Learning (LMS)"
+    },
+    {
+     "id": "p10_exclusion_monitoring",
+     "title": "10. Exclusion Monitoring"
+    },
+    {
+     "id": "p11_hr",
+     "title": "11. HR & Workforce"
+    }
+   ]
+  }
+ ],
+ "themes": {
+  "viventium_littleoak": {
+   "id": "viventium_littleoak",
+   "name": "Viventium \u2013 Little Oak Behavioral Health",
+   "palette": {
+    "primary": {
+     "base": "#2E7D4F",
+     "contrast": "#FFFFFF"
+    },
+    "error": {
+     "base": "#D1435B"
+    },
+    "warning": {
+     "base": "#FBBF24"
+    },
+    "success": {
+     "base": "#2F9E7A"
+    },
+    "complementary": {
+     "c0": "#FFFFFF",
+     "c1": "#F5FAF6",
+     "c2": "#F5FAF6",
+     "c3": "#DCEBDF",
+     "c4": "#DCEBDF",
+     "c5": "#9A98A8",
+     "c6": "#6E6C80",
+     "c7": "#4F4D63",
+     "c8": "#1F5537",
+     "c9": "#13261A"
+    }
+   },
+   "logo": "https://placehold.co/600x140/FFFFFF/2E7D4F/png?text=Little+Oak+ABA&font=montserrat",
+   "cover": "https://placehold.co/1920x1080/1F5537/1F5537/png",
+   "accent": "#2E7D4F",
+   "header": {
+    "backgroundColor": "#FFFFFF",
+    "color": "#1F5537",
+    "activeColor": "#2E7D4F"
+   }
+  },
+  "viventium_hearthside": {
+   "id": "viventium_hearthside",
+   "name": "Viventium \u2013 HearthSide Home Care",
+   "palette": {
+    "primary": {
+     "base": "#C0532F",
+     "contrast": "#FFFFFF"
+    },
+    "error": {
+     "base": "#D1435B"
+    },
+    "warning": {
+     "base": "#FBBF24"
+    },
+    "success": {
+     "base": "#2F9E7A"
+    },
+    "complementary": {
+     "c0": "#FFFFFF",
+     "c1": "#FBF6F3",
+     "c2": "#FBF6F3",
+     "c3": "#EADFD8",
+     "c4": "#EADFD8",
+     "c5": "#9A98A8",
+     "c6": "#6E6C80",
+     "c7": "#4F4D63",
+     "c8": "#2E3A4F",
+     "c9": "#1E2533"
+    }
+   },
+   "logo": "https://placehold.co/600x140/FFFFFF/C0532F/png?text=HearthSide+Home+Care&font=montserrat",
+   "cover": "https://placehold.co/1920x1080/2E3A4F/2E3A4F/png",
+   "accent": "#F2B544",
+   "header": {
+    "backgroundColor": "#2E3A4F",
+    "color": "#FFFFFF",
+    "activeColor": "#F2B544"
+   }
+  },
+  "viventium_maplehollow": {
+   "id": "viventium_maplehollow",
+   "name": "Viventium \u2013 Maple Hollow Senior Living",
+   "palette": {
+    "primary": {
+     "base": "#A23B2A",
+     "contrast": "#FFFFFF"
+    },
+    "error": {
+     "base": "#D1435B"
+    },
+    "warning": {
+     "base": "#FBBF24"
+    },
+    "success": {
+     "base": "#2F9E7A"
+    },
+    "complementary": {
+     "c0": "#FFFFFF",
+     "c1": "#FBF6F2",
+     "c2": "#FBF6F2",
+     "c3": "#EDE0D8",
+     "c4": "#EDE0D8",
+     "c5": "#9A98A8",
+     "c6": "#6E6C80",
+     "c7": "#4F4D63",
+     "c8": "#6E1F2A",
+     "c9": "#2B1215"
+    }
+   },
+   "logo": "https://placehold.co/600x140/FFFFFF/6E1F2A/png?text=Maple+Hollow&font=montserrat",
+   "cover": "https://placehold.co/1920x1080/6E1F2A/6E1F2A/png",
+   "accent": "#D9692B",
+   "header": {
+    "backgroundColor": "#FFFFFF",
+    "color": "#6E1F2A",
+    "activeColor": "#D9692B"
+   }
+  },
+  "viventium": {
+   "id": "viventium",
+   "name": "Viventium \u2013 Viventium",
+   "palette": {
+    "primary": {
+     "base": "#8C21E7",
+     "contrast": "#FFFFFF"
+    },
+    "error": {
+     "base": "#D1435B"
+    },
+    "warning": {
+     "base": "#FBBF24"
+    },
+    "success": {
+     "base": "#2F9E7A"
+    },
+    "complementary": {
+     "c0": "#FFFFFF",
+     "c1": "#FBF8FE",
+     "c2": "#FBF8FE",
+     "c3": "#E7DDF5",
+     "c4": "#E7DDF5",
+     "c5": "#9A98A8",
+     "c6": "#6E6C80",
+     "c7": "#4F4D63",
+     "c8": "#591490",
+     "c9": "#140B42"
+    }
+   },
+   "logo": "https://viventium.com/hs-fs/hubfs/viventium-logo.png?width=496&height=96&name=viventium-logo.png",
+   "cover": "https://viventium.com/hubfs/2025%20Marketing/Images/Brand%20Images/manager-in-conversation.jpg",
+   "accent": "#8C21E7",
+   "header": {
+    "backgroundColor": "#FFFFFF",
+    "color": "#3A394E",
+    "activeColor": "#8C21E7"
+   }
+  },
+  "viventium_willowbend": {
+   "id": "viventium_willowbend",
+   "name": "Viventium \u2013 Willowbend Home Health & Hospice",
+   "palette": {
+    "primary": {
+     "base": "#3E7A63",
+     "contrast": "#FFFFFF"
+    },
+    "error": {
+     "base": "#D1435B"
+    },
+    "warning": {
+     "base": "#FBBF24"
+    },
+    "success": {
+     "base": "#2F9E7A"
+    },
+    "complementary": {
+     "c0": "#FFFFFF",
+     "c1": "#F4F8F5",
+     "c2": "#F4F8F5",
+     "c3": "#DCE7E0",
+     "c4": "#DCE7E0",
+     "c5": "#9A98A8",
+     "c6": "#6E6C80",
+     "c7": "#4F4D63",
+     "c8": "#24493D",
+     "c9": "#14261F"
+    }
+   },
+   "logo": "https://placehold.co/600x140/FFFFFF/24493D/png?text=Willowbend&font=montserrat",
+   "cover": "https://placehold.co/1920x1080/24493D/24493D/png",
+   "accent": "#B9A3D6",
+   "header": {
+    "backgroundColor": "#24493D",
+    "color": "#FFFFFF",
+    "activeColor": "#B9A3D6"
+   }
+  },
+  "viventium_riverstone": {
+   "id": "viventium_riverstone",
+   "name": "Viventium \u2013 Riverstone Health Partners",
+   "palette": {
+    "primary": {
+     "base": "#1B6F8C",
+     "contrast": "#FFFFFF"
+    },
+    "error": {
+     "base": "#D1435B"
+    },
+    "warning": {
+     "base": "#FBBF24"
+    },
+    "success": {
+     "base": "#2F9E7A"
+    },
+    "complementary": {
+     "c0": "#FFFFFF",
+     "c1": "#F3F7FA",
+     "c2": "#F3F7FA",
+     "c3": "#DCE5EC",
+     "c4": "#DCE5EC",
+     "c5": "#9A98A8",
+     "c6": "#6E6C80",
+     "c7": "#4F4D63",
+     "c8": "#12355B",
+     "c9": "#0D2238"
+    }
+   },
+   "logo": "https://placehold.co/600x140/FFFFFF/12355B/png?text=Riverstone+Health&font=montserrat",
+   "cover": "https://placehold.co/1920x1080/12355B/12355B/png",
+   "accent": "#E0A526",
+   "header": {
+    "backgroundColor": "#12355B",
+    "color": "#FFFFFF",
+    "activeColor": "#E0A526"
+   }
+  }
+ },
+ "wdfs": [
+  {
+   "id": "client_id",
+   "title": "Client ID",
+   "column": "wdf__client_id",
+   "values": {
+    "hearthside": [
+     "hearthside"
+    ],
+    "littleoak": [
+     "littleoak"
+    ],
+    "maplehollow": [
+     "maplehollow"
+    ],
+    "riverstone": [
+     "riverstone"
+    ],
+    "shard_base_01": [
+     "maplehollow",
+     "willowbend",
+     "littleoak"
+    ],
+    "willowbend": [
+     "willowbend"
+    ]
+   }
+  }
+ ],
+ "groups": {
+  "2e24dbaa-664c-49be-963c-01f1702196c5": "View Group",
+  "adminGroup": "admin",
+  "client_hearthside": "Client: HearthSide Home Care",
+  "client_littleoak": "Client: Little Oak Behavioral Health",
+  "client_maplehollow": "Client: Maple Hollow Senior Living",
+  "client_riverstone": "Client: Riverstone Health Partners",
+  "client_willowbend": "Client: Willowbend Home Health & Hospice",
+  "customer_a_group": "Customer A User Group",
+  "customer_b_group": "Customer B User Group",
+  "customer_c_group": "Customer C User Group",
+  "db0d2a0a-61ab-4bae-b4c7-552eeeb34658": "test",
+  "dp_aca_compliance": "Data Product: ACA Compliance",
+  "dp_applicant_tracking": "Data Product: Applicant Tracking",
+  "dp_benefits": "Data Product: Benefits",
+  "dp_exclusion_monitoring": "Data Product: Exclusion Monitoring",
+  "dp_hr": "Data Product: HR",
+  "dp_lms": "Data Product: LMS",
+  "dp_onboarding": "Data Product: Onboarding",
+  "dp_on_demand_pay": "Data Product: On-Demand Pay",
+  "dp_payroll": "Data Product: Payroll",
+  "dp_scheduling": "Data Product: Scheduling",
+  "dp_time_attendance": "Data Product: Time & Attendance",
+  "e1797ea1-3b76-48ba-b7ee-011b6a5388eb": "Analyze Group"
+ },
+ "members": {
+  "admin": [
+   "adminGroup"
+  ],
+  "viv.riverstone.payroll": [
+   "dp_aca_compliance",
+   "dp_benefits",
+   "dp_payroll",
+   "dp_on_demand_pay",
+   "dp_hr",
+   "client_riverstone"
+  ],
+  "viv.riverstone.recruiter": [
+   "dp_onboarding",
+   "dp_applicant_tracking",
+   "client_riverstone"
+  ],
+  "viv.hearthside.scheduler": [
+   "client_hearthside",
+   "dp_scheduling",
+   "dp_time_attendance"
+  ],
+  "viv.maplehollow.payroll": [
+   "dp_payroll",
+   "dp_on_demand_pay",
+   "client_maplehollow"
+  ],
+  "viv.willowbend.hr": [
+   "dp_hr",
+   "client_willowbend",
+   "dp_benefits",
+   "dp_exclusion_monitoring",
+   "dp_lms"
+  ],
+  "viv.littleoak.scheduler": [
+   "client_littleoak",
+   "dp_scheduling",
+   "dp_time_attendance"
+  ]
+ },
+ "agents": [
+  {
+   "id": "1f210727-484c-4a21-bd3d-a51899395f95",
+   "name": "AI Assistant for business users and executives",
+   "description": "An AI assistant for business users and executives that helps summarize dashboards, explain trends, identify key drivers and anomalies, create visualizations, and forecast future performance using natural language.",
+   "skills": [
+    "visualization",
+    "alert",
+    "what_if_analysis",
+    "key_driver_analysis",
+    "forecasting",
+    "visualization_summary",
+    "dashboard_summary",
+    "schedule_export",
+    "anomaly_detection",
+    "clustering"
+   ],
+   "availableToAll": false,
+   "groups": [
+    "2e24dbaa-664c-49be-963c-01f1702196c5"
+   ],
+   "conference": false
+  },
+  {
+   "id": "4e38b697-433a-4192-a57f-bd50c72a05f6",
+   "name": "AI Assistant for business/data analysts",
+   "description": "An AI assistant for business and data analysts that helps users explore governed data, create visualizations and metrics, identify key drivers and anomalies, generate forecasts, and set up alerts using natural-language questions.",
+   "skills": [
+    "visualization",
+    "what_if_analysis",
+    "key_driver_analysis",
+    "forecasting",
+    "metric",
+    "anomaly_detection",
+    "clustering"
+   ],
+   "availableToAll": false,
+   "groups": [
+    "e1797ea1-3b76-48ba-b7ee-011b6a5388eb"
+   ],
+   "conference": false
+  },
+  {
+   "id": "default-ai-assistant",
+   "name": "Default GoodData AI Assistant",
+   "description": null,
+   "skills": [
+    "all skills"
+   ],
+   "availableToAll": false,
+   "groups": [
+    "adminGroup"
+   ],
+   "conference": false
+  },
+  {
+   "id": "viventium-compliance-agent",
+   "name": "Compliance Agent",
+   "description": "Checks HR compliance risk: ACA offer rate and penalty exposure, exclusion screening matches, overtime and wage-and-hour exposure, with forecasts.",
+   "skills": [
+    "key_driver_analysis",
+    "anomaly_detection",
+    "forecasting",
+    "what_if_analysis",
+    "visualization",
+    "metric"
+   ],
+   "availableToAll": false,
+   "groups": [
+    "adminGroup",
+    "dp_aca_compliance"
+   ],
+   "conference": true
+  },
+  {
+   "id": "viventium-next-steps-agent",
+   "name": "Next Steps Agent",
+   "description": "Turns the numbers into a short staffing and payroll action plan: who does what this week, plus alerts and scheduled exports to keep watching.",
+   "skills": [
+    "visualization",
+    "forecasting",
+    "alert",
+    "schedule_export",
+    "visualization_summary",
+    "dashboard_summary"
+   ],
+   "availableToAll": false,
+   "groups": [
+    "adminGroup",
+    "client_riverstone"
+   ],
+   "conference": true
+  },
+  {
+   "id": "viventium-summary-agent",
+   "name": "Workforce Summary Agent",
+   "description": "Summarizes payroll, scheduling, recruiting and HR dashboards in 5 bullets: what moved, by how much, at which facility and role.",
+   "skills": [
+    "dashboard_summary",
+    "visualization_summary",
+    "visualization",
+    "key_driver_analysis",
+    "anomaly_detection"
+   ],
+   "availableToAll": false,
+   "groups": [
+    "adminGroup",
+    "client_riverstone"
+   ],
+   "conference": true
+  }
+ ]
+}
