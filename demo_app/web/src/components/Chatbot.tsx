@@ -170,7 +170,7 @@ export function ChatbotProvider({ children }: { children: ReactNode }) {
 }
 
 /** Workspace the assistant works in: the open workspace, else the user's main one. */
-function useChatWorkspace() {
+export function useChatWorkspace() {
   const { route, persona, workspaces, overview } = useApp();
   if (route.view === "ws") return route.ws;
   if (persona.id === "admin") return overview.parent;

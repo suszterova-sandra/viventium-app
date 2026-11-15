@@ -98,7 +98,9 @@ export function Portal({ fixedWs }: { fixedWs?: string }) {
     ns && nsChange
       ? t("metricIn", { m: ns.label, dir: nsChange.up ? t("grew") : t("fell"), pct: nsChange.text.replace(/^[+−]/, ""), val: fmt(ns.cur, ns.format), q: insights!.period.cur })
       : null;
-  const subline = top
+  // without the AI permission there is no key driver analysis: the headline stays a plain KPI sentence
+  const noAi = perms !== null && !aiAllowed;
+  const subline = top && !noAi
     ? `${t(DIM_KEY[top.dim])} ${top.member}: ${top.delta >= 0 ? "+" : "−"}${fmtDelta(Math.abs(top.delta), top.format)} ${ns?.label.toLowerCase() || ""}${
         top.share && Math.sign(top.delta) === Math.sign(total) && Math.abs(top.share) <= 1 ? `, ${Math.round(Math.abs(top.share) * 100)}% ${t("ofChange")}` : ""
       }.`
@@ -164,7 +166,7 @@ export function Portal({ fixedWs }: { fixedWs?: string }) {
         )}
       </section>
 
-      <section className="portal-grid">
+      {!noAi && <section className="portal-grid">
         <div className="card">
           <div className="card-h">
             <div>
@@ -191,11 +193,7 @@ export function Portal({ fixedWs }: { fixedWs?: string }) {
             </div>
           </div>
           <div className={`card-b summary-text ${briefOpen ? "" : "clamped"}`}>
-            {perms !== null && !aiAllowed ? (
-              <div className="muted">
-                <Icon name="lock" size={14} /> <b>{t("aiLockedTitle")}.</b> {t("aiLockedText", { u: persona.name })}
-              </div>
-            ) : briefing ? (
+            {briefing ? (
               <div dangerouslySetInnerHTML={{ __html: markdown(briefing.text) }} />
             ) : briefingError ? (
               <div className="muted">—</div>
@@ -219,7 +217,7 @@ export function Portal({ fixedWs }: { fixedWs?: string }) {
             </div>
           )}
         </div>
-      </section>
+      </section>}
 
       <section style={{ marginBottom: 40 }}>
         <div className="section-title">

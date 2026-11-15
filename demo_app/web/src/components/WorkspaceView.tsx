@@ -154,11 +154,7 @@ function Dashboards({ ws, sub, viz, canCreate, permsKnown, aiAllowed }: { ws: st
         />
       ) : (
         <div className="dash-bar">
-          <Icon name="lock" size={15} />
-          <b>{cur.title}</b>
-          <span className="muted small grow">
-            {t("aiLockedTitle")}: {t("aiLockedText", { u: persona.name })}
-          </span>
+          <b className="grow">{cur.title}</b>
           <a className="icon-btn sm" target="_blank" rel="noreferrer" href={urls.app(ws, `dashboards/#/dashboard/${cur.id}`)} title={t("openInGoodData")} aria-label={t("openInGoodData")}>
             <Icon name="external" size={15} />
           </a>

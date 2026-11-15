@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { useApp } from "../AppContext";
 import type { ColorMode } from "../theme";
-import { useChatbot } from "./Chatbot";
+import { useChatbot, useChatWorkspace } from "./Chatbot";
+import { canUseAi, usePermissions } from "../catalog";
 import { LANGS, type Lang } from "../i18n";
 import { adminLoginUrl, STATIC } from "../staticBackend";
 import { Icon } from "../icons";
@@ -12,6 +13,12 @@ const TIER_SHORT: Record<TierKey, string> = { admin: "Internal", ai: "AI tier", 
 export function Topbar({ mode, onSetMode }: { mode: ColorMode; onSetMode: (m: ColorMode) => void }) {
   const { personas, persona, switchPersona, route, toast, lang, setLang, t, brand } = useApp();
   const chatbot = useChatbot();
+  const chatWs = useChatWorkspace();
+  const aiPerms = usePermissions(persona.id, chatWs);
+  const noAi = aiPerms !== null && !canUseAi(aiPerms);
+  useEffect(() => {
+    if (noAi && chatbot.isOpen) chatbot.close(); // no AI permission: no assistant panel at all
+  }, [noAi, chatbot]);
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const [whoOpen, setWhoOpen] = useState(false);
@@ -49,9 +56,11 @@ export function Topbar({ mode, onSetMode }: { mode: ColorMode; onSetMode: (m: Co
         {route.view === "control" && <b>{t("controlCenter")}</b>}
       </div>
       <div className="top-right">
-        <button className={`ai-top-btn ${chatbot.isOpen ? "on" : ""}`} onClick={() => (chatbot.isOpen ? chatbot.close() : chatbot.open())}>
-          <Icon name="sparkles" size={15} /> {t("aiAssistant")}
-        </button>
+        {!noAi && (
+          <button className={`ai-top-btn ${chatbot.isOpen ? "on" : ""}`} onClick={() => (chatbot.isOpen ? chatbot.close() : chatbot.open())}>
+            <Icon name="sparkles" size={15} /> {t("aiAssistant")}
+          </button>
+        )}
 
         <div className="persona-switch" role="tablist" aria-label="Switch user">
           {personas.map((p) => (
