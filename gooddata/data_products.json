@@ -1,0 +1,641 @@
+{
+  "Applicant Tracking": {
+    "user_group": "dp_applicant_tracking",
+    "datasets": [
+      "requisitions",
+      "job_postings",
+      "applications"
+    ],
+    "facts": [
+      "requisitions.openings",
+      "requisitions.days_open",
+      "requisitions.days_to_fill",
+      "requisitions.sign_on_bonus",
+      "job_postings.sponsorship_spend",
+      "job_postings.impressions",
+      "job_postings.clicks",
+      "job_postings.applies",
+      "applications.hours_to_first_contact",
+      "applications.days_to_hire",
+      "applications.is_screened",
+      "applications.is_interviewed",
+      "applications.is_offered",
+      "applications.is_hired"
+    ],
+    "attributes": [
+      "requisitions.requisition_id",
+      "requisitions.requisition_reason",
+      "requisitions.priority",
+      "requisitions.requisition_status",
+      "job_postings.posting_id",
+      "job_postings.job_board",
+      "job_postings.is_sponsored",
+      "applications.application_id",
+      "applications.application_source",
+      "applications.apply_device",
+      "applications.highest_stage",
+      "applications.application_status"
+    ],
+    "labels": [
+      "applications.application_id.candidate_name"
+    ],
+    "metrics": [
+      "ats_applications",
+      "ats_screened",
+      "ats_interviewed",
+      "ats_offered",
+      "ats_hires",
+      "ats_apps_per_hire",
+      "ats_screen_rate",
+      "ats_offer_accept_rate",
+      "ats_hours_first_contact",
+      "ats_days_to_hire",
+      "ats_reqs_opened",
+      "ats_open_reqs",
+      "ats_time_to_fill",
+      "ats_days_open",
+      "ats_spend",
+      "ats_board_applies",
+      "ats_clicks",
+      "ats_cost_per_apply",
+      "ats_apply_rate"
+    ],
+    "visualizations": [
+      "ats_k_apps",
+      "ats_k_hires",
+      "ats_k_dth",
+      "ats_k_contact",
+      "ats_k_open",
+      "ats_k_spend",
+      "ats_funnel",
+      "ats_trend",
+      "ats_by_source",
+      "ats_ttf_by_role",
+      "ats_ttf_trend",
+      "ats_boards",
+      "ats_open_table",
+      "ats_status"
+    ],
+    "dashboards": [
+      "p01_applicant_tracking"
+    ]
+  },
+  "Onboarding": {
+    "user_group": "dp_onboarding",
+    "datasets": [
+      "onboarding_tasks"
+    ],
+    "facts": [
+      "onboarding_tasks.days_to_complete",
+      "onboarding_tasks.is_completed",
+      "onboarding_tasks.is_overdue",
+      "onboarding_tasks.completed_on_time"
+    ],
+    "attributes": [
+      "onboarding_tasks.onboarding_task_id",
+      "onboarding_tasks.task_name",
+      "onboarding_tasks.task_category",
+      "onboarding_tasks.responsible_party",
+      "onboarding_tasks.task_status",
+      "onboarding_tasks.completed_via"
+    ],
+    "labels": [],
+    "metrics": [
+      "ob_tasks",
+      "ob_completed",
+      "ob_completion_rate",
+      "ob_on_time_rate",
+      "ob_avg_days",
+      "ob_overdue",
+      "ob_new_hires",
+      "ob_mobile_share"
+    ],
+    "visualizations": [
+      "ob_k_hires",
+      "ob_k_rate",
+      "ob_k_ontime",
+      "ob_k_days",
+      "ob_k_overdue",
+      "ob_k_mobile",
+      "ob_days_trend",
+      "ob_by_category",
+      "ob_by_task",
+      "ob_via",
+      "ob_by_location"
+    ],
+    "dashboards": [
+      "p02_onboarding"
+    ]
+  },
+  "Scheduling": {
+    "user_group": "dp_scheduling",
+    "datasets": [
+      "shifts"
+    ],
+    "facts": [
+      "shifts.scheduled_hours",
+      "shifts.visit_count",
+      "shifts.publish_lead_days",
+      "shifts.agency_cost"
+    ],
+    "attributes": [
+      "shifts.shift_id",
+      "shifts.shift_type",
+      "shifts.shift_status",
+      "shifts.fill_method",
+      "shifts.coverage_outcome",
+      "shifts.is_weekend"
+    ],
+    "labels": [],
+    "metrics": [
+      "sch_shifts",
+      "sch_scheduled_hours",
+      "sch_worked_hours",
+      "sch_original_shifts",
+      "sch_calloffs",
+      "sch_calloff_rate",
+      "sch_covered",
+      "sch_coverage_rate",
+      "sch_internal_pickups",
+      "sch_app_pickup_share",
+      "sch_agency_shifts",
+      "sch_agency_cost",
+      "sch_uncovered",
+      "sch_open_posted",
+      "sch_visits",
+      "sch_publish_lead"
+    ],
+    "visualizations": [
+      "sch_k_hours",
+      "sch_k_calloff",
+      "sch_k_cover",
+      "sch_k_agency",
+      "sch_k_uncovered",
+      "sch_k_open",
+      "sch_agency_trend",
+      "sch_coverage",
+      "sch_calloff_dow",
+      "sch_calloff_role",
+      "sch_by_type",
+      "sch_by_location"
+    ],
+    "dashboards": [
+      "p03_scheduling"
+    ]
+  },
+  "Time & Attendance": {
+    "user_group": "dp_time_attendance",
+    "datasets": [
+      "timecards"
+    ],
+    "facts": [
+      "timecards.scheduled_hours",
+      "timecards.worked_hours",
+      "timecards.regular_hours",
+      "timecards.overtime_hours",
+      "timecards.break_minutes",
+      "timecards.late_minutes",
+      "timecards.is_late",
+      "timecards.is_early_out",
+      "timecards.is_missed_punch"
+    ],
+    "attributes": [
+      "timecards.timecard_id",
+      "timecards.clock_method",
+      "timecards.within_geofence",
+      "timecards.manager_edited",
+      "timecards.approval_status"
+    ],
+    "labels": [],
+    "metrics": [
+      "ta_timecards",
+      "ta_worked_hours",
+      "ta_ot_hours",
+      "ta_ot_pct",
+      "ta_late_rate",
+      "ta_avg_late_min",
+      "ta_missed_punch_rate",
+      "ta_early_out_rate",
+      "ta_geofence_rate",
+      "ta_mobile_share",
+      "ta_pending",
+      "ta_edit_rate"
+    ],
+    "visualizations": [
+      "ta_k_hours",
+      "ta_k_ot",
+      "ta_k_late",
+      "ta_k_missed",
+      "ta_k_geo",
+      "ta_k_pending",
+      "ta_trend",
+      "ta_ot_role",
+      "ta_method",
+      "ta_late_dow",
+      "ta_by_location"
+    ],
+    "dashboards": [
+      "p04_time_attendance"
+    ]
+  },
+  "Payroll": {
+    "user_group": "dp_payroll",
+    "datasets": [
+      "payroll"
+    ],
+    "facts": [
+      "payroll.regular_hours",
+      "payroll.overtime_hours",
+      "payroll.pto_hours",
+      "payroll.regular_pay",
+      "payroll.overtime_pay",
+      "payroll.blended_rate_ot_adjustment",
+      "payroll.shift_differential_pay",
+      "payroll.wage_parity_supplement",
+      "payroll.retro_pay",
+      "payroll.bonus_pay",
+      "payroll.pto_pay",
+      "payroll.gross_pay",
+      "payroll.pretax_deductions",
+      "payroll.employee_taxes",
+      "payroll.odp_repayment",
+      "payroll.net_pay",
+      "payroll.employer_taxes",
+      "payroll.employer_benefit_cost",
+      "payroll.total_employer_cost",
+      "employees.hourly_rate",
+      "employees.annual_salary"
+    ],
+    "attributes": [
+      "payroll.payroll_id",
+      "payroll.payment_method"
+    ],
+    "labels": [],
+    "metrics": [
+      "pr_gross",
+      "pr_net",
+      "pr_regular",
+      "pr_ot",
+      "pr_blended",
+      "pr_diff",
+      "pr_parity",
+      "pr_retro",
+      "pr_bonus",
+      "pr_pto",
+      "pr_er_taxes",
+      "pr_ee_taxes",
+      "pr_pretax",
+      "pr_odp",
+      "pr_benefit_cost",
+      "pr_total_cost",
+      "pr_ot_hours",
+      "pr_paychecks",
+      "pr_employees_paid",
+      "pr_avg_check",
+      "pr_ot_share"
+    ],
+    "visualizations": [
+      "pr_k_gross",
+      "pr_k_cost",
+      "pr_k_ot",
+      "pr_k_avg",
+      "pr_k_emps",
+      "pr_k_taxes",
+      "pr_composition",
+      "pr_gross_to_net",
+      "pr_ot_role",
+      "pr_method",
+      "pr_by_location"
+    ],
+    "dashboards": [
+      "p05_payroll"
+    ]
+  },
+  "On-Demand Pay": {
+    "user_group": "dp_on_demand_pay",
+    "datasets": [
+      "odp_transactions"
+    ],
+    "facts": [
+      "odp_transactions.amount",
+      "odp_transactions.fee"
+    ],
+    "attributes": [
+      "odp_transactions.odp_transaction_id",
+      "odp_transactions.transfer_type",
+      "odp_transactions.transaction_status",
+      "odp_transactions.decline_reason"
+    ],
+    "labels": [],
+    "metrics": [
+      "odp_amount",
+      "odp_draws",
+      "odp_users",
+      "odp_avg_draw",
+      "odp_draws_per_user",
+      "odp_fees",
+      "odp_instant_share",
+      "odp_decline_rate",
+      "odp_adoption"
+    ],
+    "visualizations": [
+      "odp_k_amount",
+      "odp_k_draws",
+      "odp_k_users",
+      "odp_k_avg",
+      "odp_k_adopt",
+      "odp_k_instant",
+      "odp_trend",
+      "odp_type",
+      "odp_by_role",
+      "odp_dow",
+      "odp_by_location"
+    ],
+    "dashboards": [
+      "p06_on_demand_pay"
+    ]
+  },
+  "Benefits": {
+    "user_group": "dp_benefits",
+    "datasets": [
+      "benefit_plans",
+      "benefit_enrollments"
+    ],
+    "facts": [
+      "benefit_enrollments.covered_lives",
+      "benefit_enrollments.contribution_pct",
+      "benefit_enrollments.employee_monthly_cost",
+      "benefit_enrollments.employer_monthly_cost",
+      "benefit_enrollments.is_enrolled"
+    ],
+    "attributes": [
+      "benefit_plans.benefit_plan_id",
+      "benefit_plans.plan_type",
+      "benefit_plans.carrier",
+      "benefit_plans.network_type",
+      "benefit_enrollments.enrollment_id",
+      "benefit_enrollments.plan_year",
+      "benefit_enrollments.coverage_tier",
+      "benefit_enrollments.enrollment_event",
+      "benefit_enrollments.election_status",
+      "benefit_enrollments.enrolled_via"
+    ],
+    "labels": [
+      "benefit_plans.benefit_plan_id.plan_name"
+    ],
+    "metrics": [
+      "ben_enrollments",
+      "ben_eligible",
+      "ben_med_participation",
+      "ben_401k_participation",
+      "ben_er_cost",
+      "ben_ee_cost",
+      "ben_er_share",
+      "ben_covered_lives",
+      "ben_oe_employees"
+    ],
+    "visualizations": [
+      "ben_k_elig",
+      "ben_k_med",
+      "ben_k_401k",
+      "ben_k_er",
+      "ben_k_share",
+      "ben_k_lives",
+      "ben_oe",
+      "ben_by_plan",
+      "ben_tier",
+      "ben_cost_type",
+      "ben_via",
+      "ben_by_location"
+    ],
+    "dashboards": [
+      "p07_benefits"
+    ]
+  },
+  "ACA Compliance": {
+    "user_group": "dp_aca_compliance",
+    "datasets": [
+      "aca_monthly"
+    ],
+    "facts": [
+      "aca_monthly.hours_of_service",
+      "aca_monthly.lowest_cost_ee_premium",
+      "aca_monthly.affordability_threshold",
+      "aca_monthly.is_affordable",
+      "aca_monthly.is_aca_full_time",
+      "aca_monthly.is_offered_coverage",
+      "aca_monthly.is_enrolled_medical",
+      "aca_monthly.penalty_risk",
+      "aca_monthly.penalty_exposure_amount"
+    ],
+    "attributes": [
+      "aca_monthly.aca_record_id",
+      "aca_monthly.aca_status",
+      "aca_monthly.measurement_method",
+      "aca_monthly.offer_code_line14",
+      "aca_monthly.safe_harbor_code_line16",
+      "aca_monthly.form_1095c_status"
+    ],
+    "labels": [],
+    "metrics": [
+      "aca_ft_months",
+      "aca_avg_ft",
+      "aca_offer_rate",
+      "aca_risk_months",
+      "aca_exposure",
+      "aca_affordability",
+      "aca_enroll_rate",
+      "aca_avg_hours",
+      "aca_newly_ft",
+      "aca_records"
+    ],
+    "visualizations": [
+      "aca_k_ft",
+      "aca_k_offer",
+      "aca_k_risk",
+      "aca_k_exp",
+      "aca_k_aff",
+      "aca_k_take",
+      "aca_status_trend",
+      "aca_offer_trend",
+      "aca_line14",
+      "aca_line16",
+      "aca_risk_table",
+      "aca_by_location"
+    ],
+    "dashboards": [
+      "p08_aca"
+    ]
+  },
+  "LMS": {
+    "user_group": "dp_lms",
+    "datasets": [
+      "courses",
+      "course_assignments"
+    ],
+    "facts": [
+      "courses.duration_minutes",
+      "courses.ceu_credits",
+      "course_assignments.score_pct",
+      "course_assignments.time_spent_minutes",
+      "course_assignments.attempts",
+      "course_assignments.ceu_credits_earned",
+      "course_assignments.is_completed",
+      "course_assignments.is_overdue",
+      "course_assignments.completed_on_time"
+    ],
+    "attributes": [
+      "courses.course_id",
+      "courses.course_category",
+      "courses.delivery_format",
+      "courses.is_state_mandated",
+      "course_assignments.assignment_id",
+      "course_assignments.assignment_reason",
+      "course_assignments.assignment_status",
+      "course_assignments.completion_device"
+    ],
+    "labels": [
+      "courses.course_id.course_title"
+    ],
+    "metrics": [
+      "lms_assignments",
+      "lms_completed",
+      "lms_completion_rate",
+      "lms_on_time_rate",
+      "lms_overdue",
+      "lms_ceu",
+      "lms_avg_score",
+      "lms_hours",
+      "lms_mobile_share"
+    ],
+    "visualizations": [
+      "lms_k_rate",
+      "lms_k_ontime",
+      "lms_k_overdue",
+      "lms_k_ceu",
+      "lms_k_score",
+      "lms_k_hours",
+      "lms_trend",
+      "lms_by_category",
+      "lms_overdue_courses",
+      "lms_device",
+      "lms_by_location"
+    ],
+    "dashboards": [
+      "p09_lms"
+    ]
+  },
+  "Exclusion Monitoring": {
+    "user_group": "dp_exclusion_monitoring",
+    "datasets": [
+      "exclusion_checks"
+    ],
+    "facts": [
+      "exclusion_checks.days_to_resolve",
+      "exclusion_checks.is_potential_match",
+      "exclusion_checks.is_confirmed_match"
+    ],
+    "attributes": [
+      "exclusion_checks.check_id",
+      "exclusion_checks.exclusion_list",
+      "exclusion_checks.check_type",
+      "exclusion_checks.check_result",
+      "exclusion_checks.resolution"
+    ],
+    "labels": [],
+    "metrics": [
+      "exc_checks",
+      "exc_employees",
+      "exc_potential",
+      "exc_confirmed",
+      "exc_match_rate",
+      "exc_days_to_resolve",
+      "exc_under_review"
+    ],
+    "visualizations": [
+      "exc_k_checks",
+      "exc_k_emps",
+      "exc_k_pot",
+      "exc_k_conf",
+      "exc_k_days",
+      "exc_k_review",
+      "exc_trend",
+      "exc_matches",
+      "exc_confirmed_table",
+      "exc_type",
+      "exc_by_location"
+    ],
+    "dashboards": [
+      "p10_exclusion_monitoring"
+    ]
+  },
+  "HR": {
+    "user_group": "dp_hr",
+    "datasets": [
+      "hr_cases",
+      "workforce_monthly"
+    ],
+    "facts": [
+      "hr_cases.first_response_hours",
+      "hr_cases.resolution_days",
+      "hr_cases.satisfaction_score",
+      "hr_cases.is_rated",
+      "hr_cases.is_closed",
+      "workforce_monthly.is_active_eom",
+      "workforce_monthly.is_new_hire",
+      "workforce_monthly.is_termination",
+      "workforce_monthly.is_voluntary_termination",
+      "workforce_monthly.is_early_turnover",
+      "workforce_monthly.tenure_months",
+      "workforce_monthly.fte_eom"
+    ],
+    "attributes": [
+      "hr_cases.case_id",
+      "hr_cases.case_category",
+      "hr_cases.priority",
+      "hr_cases.channel",
+      "hr_cases.handled_by",
+      "hr_cases.case_status",
+      "hr_cases.escalated",
+      "workforce_monthly.snapshot_id"
+    ],
+    "labels": [],
+    "metrics": [
+      "hr_active_headcount",
+      "hr_headcount_eom",
+      "hr_fte_eom",
+      "hr_hires",
+      "hr_terms",
+      "hr_vol_terms",
+      "hr_turnover",
+      "hr_vol_turnover",
+      "hr_early_turnover",
+      "hr_net_change",
+      "hr_cases",
+      "hr_open_cases",
+      "hr_first_response",
+      "hr_resolution",
+      "hr_csat",
+      "hr_expert_share",
+      "hr_cases_per_100"
+    ],
+    "visualizations": [
+      "hr_k_hc",
+      "hr_k_hires",
+      "hr_k_terms",
+      "hr_k_turn",
+      "hr_k_early",
+      "hr_k_cases",
+      "hr_hc_trend",
+      "hr_flow",
+      "hr_turn_role",
+      "hr_reasons",
+      "hr_case_cat",
+      "hr_handler",
+      "hr_by_location"
+    ],
+    "dashboards": [
+      "p11_hr"
+    ]
+  }
+}

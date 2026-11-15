@@ -1,0 +1,7 @@
+user_id,first_name,last_name,client_id,role,workspace_id,workspace_permissions,data_products,locations,story
+viv.riverstone.payroll,Paula,Grant,riverstone,Payroll Director,riverstone,ANALYZE|EXPORT|CREATE_AUTOMATION|USE_AI_ASSISTANT,Payroll|On-Demand Pay|ACA Compliance|Benefits|HR,ALL,"AI tier: self-service + AI Assistant, enterprise roll-up across all 4 facilities"
+viv.riverstone.recruiter,Marcus,Lee,riverstone,HR Recruiter,riverstone,VIEW|USE_AI_ASSISTANT,Applicant Tracking|Onboarding,RSH-BKN,"AI tier, but view only: recruiting products for the Brooklyn facility; no pay data"
+viv.hearthside.scheduler,Diana,Ortiz,hearthside,Scheduler,hearthside,ANALYZE|EXPORT,Scheduling|Time & Attendance,HSC-QNS,"Analytics tier: builds own reports, no AI; Queens branch only"
+viv.maplehollow.payroll,Ken,Watanabe,maplehollow,Payroll Specialist,shard_base_01,VIEW,Payroll|On-Demand Pay,ALL,"Base shard: view only, sees only Maple Hollow although 3 clients share the workspace"
+viv.willowbend.hr,Grace,Mensah,willowbend,HR & Benefits Specialist,shard_base_01,VIEW,HR|Benefits|LMS|Exclusion Monitoring,WBH-KNX,"Base shard: view only, Willowbend Knoxville hospice only"
+viv.littleoak.scheduler,Ana,Reyes,littleoak,Scheduler,shard_base_01,VIEW,Scheduling|Time & Attendance,ALL,"Base shard: view only, Little Oak scheduling products only"

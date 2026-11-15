@@ -1,0 +1,8 @@
+# secrets: the admin token never leaves this machine
+.env
+# persona API tokens ARE committed on purpose: the static GitHub Pages build needs them (demo data only)
+demo_data/csv/
+__pycache__/
+node_modules/
+dist/
+.DS_Store

@@ -1,0 +1,1217 @@
+{
+  "type": "document",
+  "id": "dp_lms_report",
+  "version": "2",
+  "title": "LMS Report",
+  "description": "Training compliance: completion, on-time rate, CEUs and mobile learning.",
+  "tags": [
+    "LMS"
+  ],
+  "period": {
+    "granularity": "MONTH",
+    "from": -5,
+    "to": -1
+  },
+  "content": {
+    "defaults": {
+      "page_size": "widescreen",
+      "takeaway": {
+        "generation": {
+          "instructions": "Act as a professional workforce analyst for a post-acute care provider (skilled nursing, senior living, home care, home health & hospice, ABA). This report covers LMS. Write short messages, max 255 characters. Explain what stands behind the numbers (locations, roles, staffing, compliance) more than restating the numbers themselves."
+        }
+      }
+    },
+    "sections": [
+      {
+        "id": "section_main",
+        "pages": [
+          {
+            "id": "page_cover",
+            "kind": "cover",
+            "style": {
+              "background_color": "{theme.colors.backgrounds.page}"
+            },
+            "layout": {
+              "type": "row",
+              "children": [
+                {
+                  "type": "column",
+                  "style": {
+                    "background_color": "{theme.colors.backgrounds.page}"
+                  },
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "page_cover_gap237",
+                      "decorative": true,
+                      "source": "{theme.assets.images.spacer}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "center",
+                        "vertical_align": "center"
+                      },
+                      "proportion": 0.3
+                    },
+                    {
+                      "type": "row",
+                      "proportion": 10,
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_cover_gap235",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.08
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 1,
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "page_cover_gap233",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 1.6
+                            },
+                            {
+                              "type": "text",
+                              "id": "cover_kicker",
+                              "markdown": "LEARNING  ·  {documentDateRange}",
+                              "style": {
+                                "text_style": "smallText",
+                                "text_color": "{theme.colors.texts.accent}",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.6
+                            },
+                            {
+                              "type": "title",
+                              "id": "cover_title",
+                              "markdown": "**LMS Report**",
+                              "style": {
+                                "text_style": "largeText",
+                                "text_color": "{theme.colors.texts.default}",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 1.4
+                            },
+                            {
+                              "type": "image",
+                              "id": "page_cover_rule234",
+                              "decorative": true,
+                              "source": "{theme.assets.images.accent_bar}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "left",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.08
+                            },
+                            {
+                              "type": "text",
+                              "id": "cover_meta",
+                              "markdown": "Training compliance: completion, on-time rate, CEUs and mobile learning.",
+                              "style": {
+                                "text_style": "normalText",
+                                "text_color": "{theme.colors.texts.muted}",
+                                "vertical_align": "top"
+                              },
+                              "proportion": 1.3
+                            },
+                            {
+                              "type": "image",
+                              "id": "cover_logo",
+                              "decorative": true,
+                              "source": "{theme.assets.images.logo}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "left",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.6
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_cover_gap236",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.08
+                        }
+                      ]
+                    },
+                    {
+                      "type": "image",
+                      "id": "page_cover_gap238",
+                      "decorative": true,
+                      "source": "{theme.assets.images.spacer}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "center",
+                        "vertical_align": "center"
+                      },
+                      "proportion": 0.3
+                    }
+                  ],
+                  "proportion": 1
+                },
+                {
+                  "type": "column",
+                  "proportion": 1.25,
+                  "style": {
+                    "background_color": "{theme.colors.backgrounds.card}"
+                  },
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "cover_hero",
+                      "decorative": true,
+                      "source": "{theme.assets.images.dp_lms}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "center",
+                        "vertical_align": "center"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "page_glance",
+            "kind": "content",
+            "style": {
+              "background_color": "{theme.colors.backgrounds.page}"
+            },
+            "layout": {
+              "type": "column",
+              "children": [
+                {
+                  "type": "column",
+                  "proportion": 2.0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "page_glance_kicker",
+                      "markdown": "LEARNING",
+                      "style": {
+                        "text_style": "smallText",
+                        "text_color": "{theme.colors.texts.accent}",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 0.8
+                    },
+                    {
+                      "type": "title",
+                      "id": "page_glance_title",
+                      "markdown": "**At a Glance**",
+                      "style": {
+                        "text_style": "largeText",
+                        "text_color": "{theme.colors.texts.default}",
+                        "vertical_align": "center"
+                      },
+                      "proportion": 1.3
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_glance_lead",
+                      "markdown": "Headline results for the period.",
+                      "style": {
+                        "text_style": "normalText",
+                        "vertical_align": "top"
+                      },
+                      "proportion": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "id": "page_glance_rule239",
+                  "decorative": true,
+                  "source": "{theme.assets.images.accent_bar}",
+                  "style": {
+                    "fit": "contain",
+                    "horizontal_align": "left",
+                    "vertical_align": "center"
+                  },
+                  "proportion": 0.05
+                },
+                {
+                  "type": "row",
+                  "proportion": 4.0,
+                  "children": [
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap240",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "page_glance_lms_k_rate_lbl",
+                              "markdown": "**COMPLETION RATE**",
+                              "style": {
+                                "text_style": "smallText",
+                                "text_color": "{theme.colors.texts.muted}",
+                                "horizontal_align": "center",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.55
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 3.6,
+                              "children": [
+                                {
+                                  "type": "visualization",
+                                  "id": "page_glance_lms_k_rate",
+                                  "visualization": "lms_k_rate",
+                                  "date": "activity_date"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap241",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap242",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "page_glance_lms_k_ontime_lbl",
+                              "markdown": "**ON-TIME COMPLETION**",
+                              "style": {
+                                "text_style": "smallText",
+                                "text_color": "{theme.colors.texts.muted}",
+                                "horizontal_align": "center",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.55
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 3.6,
+                              "children": [
+                                {
+                                  "type": "visualization",
+                                  "id": "page_glance_lms_k_ontime",
+                                  "visualization": "lms_k_ontime",
+                                  "date": "activity_date"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap243",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap244",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "page_glance_lms_k_ceu_lbl",
+                              "markdown": "**CEUS EARNED**",
+                              "style": {
+                                "text_style": "smallText",
+                                "text_color": "{theme.colors.texts.muted}",
+                                "horizontal_align": "center",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.55
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 3.6,
+                              "children": [
+                                {
+                                  "type": "visualization",
+                                  "id": "page_glance_lms_k_ceu",
+                                  "visualization": "lms_k_ceu",
+                                  "date": "activity_date"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap245",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap246",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "page_glance_lms_k_score_lbl",
+                              "markdown": "**AVG SCORE**",
+                              "style": {
+                                "text_style": "smallText",
+                                "text_color": "{theme.colors.texts.muted}",
+                                "horizontal_align": "center",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.55
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 3.6,
+                              "children": [
+                                {
+                                  "type": "visualization",
+                                  "id": "page_glance_lms_k_score",
+                                  "visualization": "lms_k_score",
+                                  "date": "activity_date"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap247",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "proportion": 5.0,
+                  "children": [
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v_main_lbl",
+                          "markdown": "**Completions by Month and Reason**",
+                          "style": {
+                            "text_style": "normalText",
+                            "text_color": "{theme.colors.texts.default}",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 1
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 8,
+                          "children": [
+                            {
+                              "type": "visualization",
+                              "id": "v_main",
+                              "visualization": "lms_trend",
+                              "date": "activity_date"
+                            }
+                          ]
+                        }
+                      ],
+                      "proportion": 2.7
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.panel}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap250",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        },
+                        {
+                          "type": "row",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "page_glance_gap248",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 1,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "page_glance_ih",
+                                  "markdown": "**What to look for**",
+                                  "style": {
+                                    "text_style": "normalText",
+                                    "text_color": "{theme.colors.texts.accent}",
+                                    "vertical_align": "center"
+                                  },
+                                  "proportion": 1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "page_glance_ib",
+                                  "markdown": "Orientation follows hiring; annual compliance follows hire anniversaries.\n\n**Ask:** are surveyors going to find overdue mandatory training?",
+                                  "style": {
+                                    "text_style": "smallText",
+                                    "text_color": "{theme.colors.texts.muted}"
+                                  },
+                                  "proportion": 5.5
+                                }
+                              ]
+                            },
+                            {
+                              "type": "image",
+                              "id": "page_glance_gap249",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap251",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        }
+                      ],
+                      "proportion": 1.3
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "proportion": 0.6,
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "page_glance_logo",
+                      "decorative": true,
+                      "source": "{theme.assets.images.logo}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "left",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_glance_section",
+                      "proportion": 5,
+                      "decorative": true,
+                      "markdown": "Viventium  ·  LMS",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "center",
+                        "vertical_align": "bottom"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_glance_pageno",
+                      "proportion": 2,
+                      "decorative": true,
+                      "markdown": "{currentPageNumber} / {totalPages}",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "right",
+                        "vertical_align": "bottom"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "page_1",
+            "kind": "content",
+            "style": {
+              "background_color": "{theme.colors.backgrounds.page}"
+            },
+            "layout": {
+              "type": "column",
+              "children": [
+                {
+                  "type": "column",
+                  "proportion": 2.0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "page_1_kicker",
+                      "markdown": "LEARNING",
+                      "style": {
+                        "text_style": "smallText",
+                        "text_color": "{theme.colors.texts.accent}",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 0.8
+                    },
+                    {
+                      "type": "title",
+                      "id": "page_1_title",
+                      "markdown": "**Compliance by Category**",
+                      "style": {
+                        "text_style": "largeText",
+                        "text_color": "{theme.colors.texts.default}",
+                        "vertical_align": "center"
+                      },
+                      "proportion": 1.3
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_1_lead",
+                      "markdown": "Completion by course category and the learning device.",
+                      "style": {
+                        "text_style": "normalText",
+                        "vertical_align": "top"
+                      },
+                      "proportion": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "id": "page_1_rule252",
+                  "decorative": true,
+                  "source": "{theme.assets.images.accent_bar}",
+                  "style": {
+                    "fit": "contain",
+                    "horizontal_align": "left",
+                    "vertical_align": "center"
+                  },
+                  "proportion": 0.05
+                },
+                {
+                  "type": "row",
+                  "proportion": 8,
+                  "children": [
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v_1_l_lbl",
+                          "markdown": "**Completion Rate by Course Category**",
+                          "style": {
+                            "text_style": "normalText",
+                            "text_color": "{theme.colors.texts.default}",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 1
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 8,
+                          "children": [
+                            {
+                              "type": "visualization",
+                              "id": "v_1_l",
+                              "visualization": "lms_by_category",
+                              "date": "activity_date"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v_1_r_lbl",
+                          "markdown": "**Completion Device**",
+                          "style": {
+                            "text_style": "normalText",
+                            "text_color": "{theme.colors.texts.default}",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 1
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 8,
+                          "children": [
+                            {
+                              "type": "visualization",
+                              "id": "v_1_r",
+                              "visualization": "lms_device",
+                              "date": "activity_date"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.panel}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_1_gap255",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        },
+                        {
+                          "type": "row",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "page_1_gap253",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 1,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "page_1_ih",
+                                  "markdown": "**What to look for**",
+                                  "style": {
+                                    "text_style": "normalText",
+                                    "text_color": "{theme.colors.texts.accent}",
+                                    "vertical_align": "center"
+                                  },
+                                  "proportion": 1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "page_1_ib",
+                                  "markdown": "Compliance courses should be near 100%; development courses are optional.\n\n**Ask:** does mobile learning lift completion for field staff?",
+                                  "style": {
+                                    "text_style": "smallText",
+                                    "text_color": "{theme.colors.texts.muted}"
+                                  },
+                                  "proportion": 5.5
+                                }
+                              ]
+                            },
+                            {
+                              "type": "image",
+                              "id": "page_1_gap254",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_1_gap256",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        }
+                      ],
+                      "proportion": 0.75
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "proportion": 0.6,
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "page_1_logo",
+                      "decorative": true,
+                      "source": "{theme.assets.images.logo}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "left",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_1_section",
+                      "proportion": 5,
+                      "decorative": true,
+                      "markdown": "Viventium  ·  LMS",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "center",
+                        "vertical_align": "bottom"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_1_pageno",
+                      "proportion": 2,
+                      "decorative": true,
+                      "markdown": "{currentPageNumber} / {totalPages}",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "right",
+                        "vertical_align": "bottom"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "page_2",
+            "kind": "content",
+            "style": {
+              "background_color": "{theme.colors.backgrounds.page}"
+            },
+            "layout": {
+              "type": "column",
+              "children": [
+                {
+                  "type": "column",
+                  "proportion": 2.0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "page_2_kicker",
+                      "markdown": "LEARNING",
+                      "style": {
+                        "text_style": "smallText",
+                        "text_color": "{theme.colors.texts.accent}",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 0.8
+                    },
+                    {
+                      "type": "title",
+                      "id": "page_2_title",
+                      "markdown": "**Locations**",
+                      "style": {
+                        "text_style": "largeText",
+                        "text_color": "{theme.colors.texts.default}",
+                        "vertical_align": "center"
+                      },
+                      "proportion": 1.3
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_2_lead",
+                      "markdown": "Training KPIs per location.",
+                      "style": {
+                        "text_style": "normalText",
+                        "vertical_align": "top"
+                      },
+                      "proportion": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "id": "page_2_rule257",
+                  "decorative": true,
+                  "source": "{theme.assets.images.accent_bar}",
+                  "style": {
+                    "fit": "contain",
+                    "horizontal_align": "left",
+                    "vertical_align": "center"
+                  },
+                  "proportion": 0.05
+                },
+                {
+                  "type": "row",
+                  "proportion": 8,
+                  "children": [
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v_2_l_lbl",
+                          "markdown": "**Training by Location**",
+                          "style": {
+                            "text_style": "normalText",
+                            "text_color": "{theme.colors.texts.default}",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 1
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 8,
+                          "children": [
+                            {
+                              "type": "visualization",
+                              "id": "v_2_l",
+                              "visualization": "lms_by_location",
+                              "date": "activity_date"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v_2_r_lbl",
+                          "markdown": "**Completion Rate by Course Category**",
+                          "style": {
+                            "text_style": "normalText",
+                            "text_color": "{theme.colors.texts.default}",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 1
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 8,
+                          "children": [
+                            {
+                              "type": "visualization",
+                              "id": "v_2_r",
+                              "visualization": "lms_by_category",
+                              "date": "activity_date"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.panel}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_2_gap260",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        },
+                        {
+                          "type": "row",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "page_2_gap258",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 1,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "page_2_ih",
+                                  "markdown": "**What to look for**",
+                                  "style": {
+                                    "text_style": "normalText",
+                                    "text_color": "{theme.colors.texts.accent}",
+                                    "vertical_align": "center"
+                                  },
+                                  "proportion": 1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "page_2_ib",
+                                  "markdown": "Low on-time rates usually mean courses are assigned too close to the deadline.\n\n**Ask:** which locations need reminders?",
+                                  "style": {
+                                    "text_style": "smallText",
+                                    "text_color": "{theme.colors.texts.muted}"
+                                  },
+                                  "proportion": 5.5
+                                }
+                              ]
+                            },
+                            {
+                              "type": "image",
+                              "id": "page_2_gap259",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_2_gap261",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        }
+                      ],
+                      "proportion": 0.75
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "proportion": 0.6,
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "page_2_logo",
+                      "decorative": true,
+                      "source": "{theme.assets.images.logo}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "left",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_2_section",
+                      "proportion": 5,
+                      "decorative": true,
+                      "markdown": "Viventium  ·  LMS",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "center",
+                        "vertical_align": "bottom"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_2_pageno",
+                      "proportion": 2,
+                      "decorative": true,
+                      "markdown": "{currentPageNumber} / {totalPages}",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "right",
+                        "vertical_align": "bottom"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

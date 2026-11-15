@@ -1,0 +1,1217 @@
+{
+  "type": "document",
+  "id": "dp_scheduling_report",
+  "version": "2",
+  "title": "Scheduling Report",
+  "description": "Call-offs, coverage, agency dependency and open shifts.",
+  "tags": [
+    "Scheduling"
+  ],
+  "period": {
+    "granularity": "MONTH",
+    "from": -5,
+    "to": -1
+  },
+  "content": {
+    "defaults": {
+      "page_size": "widescreen",
+      "takeaway": {
+        "generation": {
+          "instructions": "Act as a professional workforce analyst for a post-acute care provider (skilled nursing, senior living, home care, home health & hospice, ABA). This report covers Scheduling. Write short messages, max 255 characters. Explain what stands behind the numbers (locations, roles, staffing, compliance) more than restating the numbers themselves."
+        }
+      }
+    },
+    "sections": [
+      {
+        "id": "section_main",
+        "pages": [
+          {
+            "id": "page_cover",
+            "kind": "cover",
+            "style": {
+              "background_color": "{theme.colors.backgrounds.page}"
+            },
+            "layout": {
+              "type": "row",
+              "children": [
+                {
+                  "type": "column",
+                  "style": {
+                    "background_color": "{theme.colors.backgrounds.page}"
+                  },
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "page_cover_gap63",
+                      "decorative": true,
+                      "source": "{theme.assets.images.spacer}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "center",
+                        "vertical_align": "center"
+                      },
+                      "proportion": 0.3
+                    },
+                    {
+                      "type": "row",
+                      "proportion": 10,
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_cover_gap61",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.08
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 1,
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "page_cover_gap59",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 1.6
+                            },
+                            {
+                              "type": "text",
+                              "id": "cover_kicker",
+                              "markdown": "SCHEDULING  ·  {documentDateRange}",
+                              "style": {
+                                "text_style": "smallText",
+                                "text_color": "{theme.colors.texts.accent}",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.6
+                            },
+                            {
+                              "type": "title",
+                              "id": "cover_title",
+                              "markdown": "**Scheduling Report**",
+                              "style": {
+                                "text_style": "largeText",
+                                "text_color": "{theme.colors.texts.default}",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 1.4
+                            },
+                            {
+                              "type": "image",
+                              "id": "page_cover_rule60",
+                              "decorative": true,
+                              "source": "{theme.assets.images.accent_bar}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "left",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.08
+                            },
+                            {
+                              "type": "text",
+                              "id": "cover_meta",
+                              "markdown": "Call-offs, coverage, agency dependency and open shifts.",
+                              "style": {
+                                "text_style": "normalText",
+                                "text_color": "{theme.colors.texts.muted}",
+                                "vertical_align": "top"
+                              },
+                              "proportion": 1.3
+                            },
+                            {
+                              "type": "image",
+                              "id": "cover_logo",
+                              "decorative": true,
+                              "source": "{theme.assets.images.logo}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "left",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.6
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_cover_gap62",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.08
+                        }
+                      ]
+                    },
+                    {
+                      "type": "image",
+                      "id": "page_cover_gap64",
+                      "decorative": true,
+                      "source": "{theme.assets.images.spacer}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "center",
+                        "vertical_align": "center"
+                      },
+                      "proportion": 0.3
+                    }
+                  ],
+                  "proportion": 1
+                },
+                {
+                  "type": "column",
+                  "proportion": 1.25,
+                  "style": {
+                    "background_color": "{theme.colors.backgrounds.card}"
+                  },
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "cover_hero",
+                      "decorative": true,
+                      "source": "{theme.assets.images.dp_scheduling}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "center",
+                        "vertical_align": "center"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "page_glance",
+            "kind": "content",
+            "style": {
+              "background_color": "{theme.colors.backgrounds.page}"
+            },
+            "layout": {
+              "type": "column",
+              "children": [
+                {
+                  "type": "column",
+                  "proportion": 2.0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "page_glance_kicker",
+                      "markdown": "SCHEDULING",
+                      "style": {
+                        "text_style": "smallText",
+                        "text_color": "{theme.colors.texts.accent}",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 0.8
+                    },
+                    {
+                      "type": "title",
+                      "id": "page_glance_title",
+                      "markdown": "**At a Glance**",
+                      "style": {
+                        "text_style": "largeText",
+                        "text_color": "{theme.colors.texts.default}",
+                        "vertical_align": "center"
+                      },
+                      "proportion": 1.3
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_glance_lead",
+                      "markdown": "Headline results for the period.",
+                      "style": {
+                        "text_style": "normalText",
+                        "vertical_align": "top"
+                      },
+                      "proportion": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "id": "page_glance_rule65",
+                  "decorative": true,
+                  "source": "{theme.assets.images.accent_bar}",
+                  "style": {
+                    "fit": "contain",
+                    "horizontal_align": "left",
+                    "vertical_align": "center"
+                  },
+                  "proportion": 0.05
+                },
+                {
+                  "type": "row",
+                  "proportion": 4.0,
+                  "children": [
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap66",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "page_glance_sch_k_hours_lbl",
+                              "markdown": "**SCHEDULED HOURS**",
+                              "style": {
+                                "text_style": "smallText",
+                                "text_color": "{theme.colors.texts.muted}",
+                                "horizontal_align": "center",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.55
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 3.6,
+                              "children": [
+                                {
+                                  "type": "visualization",
+                                  "id": "page_glance_sch_k_hours",
+                                  "visualization": "sch_k_hours",
+                                  "date": "activity_date"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap67",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap68",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "page_glance_sch_k_calloff_lbl",
+                              "markdown": "**CALL-OFF RATE**",
+                              "style": {
+                                "text_style": "smallText",
+                                "text_color": "{theme.colors.texts.muted}",
+                                "horizontal_align": "center",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.55
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 3.6,
+                              "children": [
+                                {
+                                  "type": "visualization",
+                                  "id": "page_glance_sch_k_calloff",
+                                  "visualization": "sch_k_calloff",
+                                  "date": "activity_date"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap69",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap70",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "page_glance_sch_k_cover_lbl",
+                              "markdown": "**COVERAGE RATE**",
+                              "style": {
+                                "text_style": "smallText",
+                                "text_color": "{theme.colors.texts.muted}",
+                                "horizontal_align": "center",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.55
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 3.6,
+                              "children": [
+                                {
+                                  "type": "visualization",
+                                  "id": "page_glance_sch_k_cover",
+                                  "visualization": "sch_k_cover",
+                                  "date": "activity_date"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap71",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap72",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "page_glance_sch_k_agency_lbl",
+                              "markdown": "**AGENCY COST**",
+                              "style": {
+                                "text_style": "smallText",
+                                "text_color": "{theme.colors.texts.muted}",
+                                "horizontal_align": "center",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.55
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 3.6,
+                              "children": [
+                                {
+                                  "type": "visualization",
+                                  "id": "page_glance_sch_k_agency",
+                                  "visualization": "sch_k_agency",
+                                  "date": "activity_date"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap73",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "proportion": 5.0,
+                  "children": [
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v_main_lbl",
+                          "markdown": "**Internal Pickups vs Agency by Month**",
+                          "style": {
+                            "text_style": "normalText",
+                            "text_color": "{theme.colors.texts.default}",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 1
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 8,
+                          "children": [
+                            {
+                              "type": "visualization",
+                              "id": "v_main",
+                              "visualization": "sch_agency_trend",
+                              "date": "activity_date"
+                            }
+                          ]
+                        }
+                      ],
+                      "proportion": 2.7
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.panel}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap76",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        },
+                        {
+                          "type": "row",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "page_glance_gap74",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 1,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "page_glance_ih",
+                                  "markdown": "**What to look for**",
+                                  "style": {
+                                    "text_style": "normalText",
+                                    "text_color": "{theme.colors.texts.accent}",
+                                    "vertical_align": "center"
+                                  },
+                                  "proportion": 1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "page_glance_ib",
+                                  "markdown": "Agency shifts are the most expensive way to cover a call-off; internal pickups the cheapest.\n\nFalling agency cost with stable coverage means staff pick up more shifts in the app.\n\n**Ask:** which roles still depend on agencies?",
+                                  "style": {
+                                    "text_style": "smallText",
+                                    "text_color": "{theme.colors.texts.muted}"
+                                  },
+                                  "proportion": 5.5
+                                }
+                              ]
+                            },
+                            {
+                              "type": "image",
+                              "id": "page_glance_gap75",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap77",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        }
+                      ],
+                      "proportion": 1.3
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "proportion": 0.6,
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "page_glance_logo",
+                      "decorative": true,
+                      "source": "{theme.assets.images.logo}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "left",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_glance_section",
+                      "proportion": 5,
+                      "decorative": true,
+                      "markdown": "Viventium  ·  Scheduling",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "center",
+                        "vertical_align": "bottom"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_glance_pageno",
+                      "proportion": 2,
+                      "decorative": true,
+                      "markdown": "{currentPageNumber} / {totalPages}",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "right",
+                        "vertical_align": "bottom"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "page_1",
+            "kind": "content",
+            "style": {
+              "background_color": "{theme.colors.backgrounds.page}"
+            },
+            "layout": {
+              "type": "column",
+              "children": [
+                {
+                  "type": "column",
+                  "proportion": 2.0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "page_1_kicker",
+                      "markdown": "SCHEDULING",
+                      "style": {
+                        "text_style": "smallText",
+                        "text_color": "{theme.colors.texts.accent}",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 0.8
+                    },
+                    {
+                      "type": "title",
+                      "id": "page_1_title",
+                      "markdown": "**How Call-Offs Get Covered**",
+                      "style": {
+                        "text_style": "largeText",
+                        "text_color": "{theme.colors.texts.default}",
+                        "vertical_align": "center"
+                      },
+                      "proportion": 1.3
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_1_lead",
+                      "markdown": "Coverage outcome over time and call-offs by weekday.",
+                      "style": {
+                        "text_style": "normalText",
+                        "vertical_align": "top"
+                      },
+                      "proportion": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "id": "page_1_rule78",
+                  "decorative": true,
+                  "source": "{theme.assets.images.accent_bar}",
+                  "style": {
+                    "fit": "contain",
+                    "horizontal_align": "left",
+                    "vertical_align": "center"
+                  },
+                  "proportion": 0.05
+                },
+                {
+                  "type": "row",
+                  "proportion": 8,
+                  "children": [
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v_1_l_lbl",
+                          "markdown": "**How Call-Offs Were Covered**",
+                          "style": {
+                            "text_style": "normalText",
+                            "text_color": "{theme.colors.texts.default}",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 1
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 8,
+                          "children": [
+                            {
+                              "type": "visualization",
+                              "id": "v_1_l",
+                              "visualization": "sch_coverage",
+                              "date": "activity_date"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v_1_r_lbl",
+                          "markdown": "**Call-Off Rate by Weekday**",
+                          "style": {
+                            "text_style": "normalText",
+                            "text_color": "{theme.colors.texts.default}",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 1
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 8,
+                          "children": [
+                            {
+                              "type": "visualization",
+                              "id": "v_1_r",
+                              "visualization": "sch_calloff_dow",
+                              "date": "activity_date"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.panel}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_1_gap81",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        },
+                        {
+                          "type": "row",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "page_1_gap79",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 1,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "page_1_ih",
+                                  "markdown": "**What to look for**",
+                                  "style": {
+                                    "text_style": "normalText",
+                                    "text_color": "{theme.colors.texts.accent}",
+                                    "vertical_align": "center"
+                                  },
+                                  "proportion": 1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "page_1_ib",
+                                  "markdown": "Internal pickups should grow while agency and uncovered shrink.\n\nWeekends and winter months carry the most call-offs.\n\n**Ask:** do weekend incentives help?",
+                                  "style": {
+                                    "text_style": "smallText",
+                                    "text_color": "{theme.colors.texts.muted}"
+                                  },
+                                  "proportion": 5.5
+                                }
+                              ]
+                            },
+                            {
+                              "type": "image",
+                              "id": "page_1_gap80",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_1_gap82",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        }
+                      ],
+                      "proportion": 0.75
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "proportion": 0.6,
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "page_1_logo",
+                      "decorative": true,
+                      "source": "{theme.assets.images.logo}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "left",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_1_section",
+                      "proportion": 5,
+                      "decorative": true,
+                      "markdown": "Viventium  ·  Scheduling",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "center",
+                        "vertical_align": "bottom"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_1_pageno",
+                      "proportion": 2,
+                      "decorative": true,
+                      "markdown": "{currentPageNumber} / {totalPages}",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "right",
+                        "vertical_align": "bottom"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "page_2",
+            "kind": "content",
+            "style": {
+              "background_color": "{theme.colors.backgrounds.page}"
+            },
+            "layout": {
+              "type": "column",
+              "children": [
+                {
+                  "type": "column",
+                  "proportion": 2.0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "page_2_kicker",
+                      "markdown": "SCHEDULING",
+                      "style": {
+                        "text_style": "smallText",
+                        "text_color": "{theme.colors.texts.accent}",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 0.8
+                    },
+                    {
+                      "type": "title",
+                      "id": "page_2_title",
+                      "markdown": "**Roles & Locations**",
+                      "style": {
+                        "text_style": "largeText",
+                        "text_color": "{theme.colors.texts.default}",
+                        "vertical_align": "center"
+                      },
+                      "proportion": 1.3
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_2_lead",
+                      "markdown": "Which roles call off most and how each location staffs.",
+                      "style": {
+                        "text_style": "normalText",
+                        "vertical_align": "top"
+                      },
+                      "proportion": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "id": "page_2_rule83",
+                  "decorative": true,
+                  "source": "{theme.assets.images.accent_bar}",
+                  "style": {
+                    "fit": "contain",
+                    "horizontal_align": "left",
+                    "vertical_align": "center"
+                  },
+                  "proportion": 0.05
+                },
+                {
+                  "type": "row",
+                  "proportion": 8,
+                  "children": [
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v_2_l_lbl",
+                          "markdown": "**Call-Off Rate by Job Role**",
+                          "style": {
+                            "text_style": "normalText",
+                            "text_color": "{theme.colors.texts.default}",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 1
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 8,
+                          "children": [
+                            {
+                              "type": "visualization",
+                              "id": "v_2_l",
+                              "visualization": "sch_calloff_role",
+                              "date": "activity_date"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v_2_r_lbl",
+                          "markdown": "**Scheduling by Location**",
+                          "style": {
+                            "text_style": "normalText",
+                            "text_color": "{theme.colors.texts.default}",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 1
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 8,
+                          "children": [
+                            {
+                              "type": "visualization",
+                              "id": "v_2_r",
+                              "visualization": "sch_by_location",
+                              "date": "activity_date"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.panel}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_2_gap86",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        },
+                        {
+                          "type": "row",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "page_2_gap84",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 1,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "page_2_ih",
+                                  "markdown": "**What to look for**",
+                                  "style": {
+                                    "text_style": "normalText",
+                                    "text_color": "{theme.colors.texts.accent}",
+                                    "vertical_align": "center"
+                                  },
+                                  "proportion": 1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "page_2_ib",
+                                  "markdown": "Direct care roles call off most - and are hardest to replace.\n\nMissed visits in home-based care are a client-experience risk.\n\n**Ask:** where is coverage weakest?",
+                                  "style": {
+                                    "text_style": "smallText",
+                                    "text_color": "{theme.colors.texts.muted}"
+                                  },
+                                  "proportion": 5.5
+                                }
+                              ]
+                            },
+                            {
+                              "type": "image",
+                              "id": "page_2_gap85",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_2_gap87",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        }
+                      ],
+                      "proportion": 0.75
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "proportion": 0.6,
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "page_2_logo",
+                      "decorative": true,
+                      "source": "{theme.assets.images.logo}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "left",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_2_section",
+                      "proportion": 5,
+                      "decorative": true,
+                      "markdown": "Viventium  ·  Scheduling",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "center",
+                        "vertical_align": "bottom"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_2_pageno",
+                      "proportion": 2,
+                      "decorative": true,
+                      "markdown": "{currentPageNumber} / {totalPages}",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "right",
+                        "vertical_align": "bottom"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1217 @@
+{
+  "type": "document",
+  "id": "dp_aca_compliance_report",
+  "version": "2",
+  "title": "ACA Compliance Report",
+  "description": "Full-time counts, the 95% offer test, affordability and penalty exposure.",
+  "tags": [
+    "ACA Compliance"
+  ],
+  "period": {
+    "granularity": "MONTH",
+    "from": -5,
+    "to": -1
+  },
+  "content": {
+    "defaults": {
+      "page_size": "widescreen",
+      "takeaway": {
+        "generation": {
+          "instructions": "Act as a professional workforce analyst for a post-acute care provider (skilled nursing, senior living, home care, home health & hospice, ABA). This report covers ACA Compliance. Write short messages, max 255 characters. Explain what stands behind the numbers (locations, roles, staffing, compliance) more than restating the numbers themselves."
+        }
+      }
+    },
+    "sections": [
+      {
+        "id": "section_main",
+        "pages": [
+          {
+            "id": "page_cover",
+            "kind": "cover",
+            "style": {
+              "background_color": "{theme.colors.backgrounds.page}"
+            },
+            "layout": {
+              "type": "row",
+              "children": [
+                {
+                  "type": "column",
+                  "style": {
+                    "background_color": "{theme.colors.backgrounds.page}"
+                  },
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "page_cover_gap208",
+                      "decorative": true,
+                      "source": "{theme.assets.images.spacer}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "center",
+                        "vertical_align": "center"
+                      },
+                      "proportion": 0.3
+                    },
+                    {
+                      "type": "row",
+                      "proportion": 10,
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_cover_gap206",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.08
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 1,
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "page_cover_gap204",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 1.6
+                            },
+                            {
+                              "type": "text",
+                              "id": "cover_kicker",
+                              "markdown": "ACA COMPLIANCE  ·  {documentDateRange}",
+                              "style": {
+                                "text_style": "smallText",
+                                "text_color": "{theme.colors.texts.accent}",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.6
+                            },
+                            {
+                              "type": "title",
+                              "id": "cover_title",
+                              "markdown": "**ACA Compliance Report**",
+                              "style": {
+                                "text_style": "largeText",
+                                "text_color": "{theme.colors.texts.default}",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 1.4
+                            },
+                            {
+                              "type": "image",
+                              "id": "page_cover_rule205",
+                              "decorative": true,
+                              "source": "{theme.assets.images.accent_bar}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "left",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.08
+                            },
+                            {
+                              "type": "text",
+                              "id": "cover_meta",
+                              "markdown": "Full-time counts, the 95% offer test, affordability and penalty exposure.",
+                              "style": {
+                                "text_style": "normalText",
+                                "text_color": "{theme.colors.texts.muted}",
+                                "vertical_align": "top"
+                              },
+                              "proportion": 1.3
+                            },
+                            {
+                              "type": "image",
+                              "id": "cover_logo",
+                              "decorative": true,
+                              "source": "{theme.assets.images.logo}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "left",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.6
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_cover_gap207",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.08
+                        }
+                      ]
+                    },
+                    {
+                      "type": "image",
+                      "id": "page_cover_gap209",
+                      "decorative": true,
+                      "source": "{theme.assets.images.spacer}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "center",
+                        "vertical_align": "center"
+                      },
+                      "proportion": 0.3
+                    }
+                  ],
+                  "proportion": 1
+                },
+                {
+                  "type": "column",
+                  "proportion": 1.25,
+                  "style": {
+                    "background_color": "{theme.colors.backgrounds.card}"
+                  },
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "cover_hero",
+                      "decorative": true,
+                      "source": "{theme.assets.images.dp_aca_compliance}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "center",
+                        "vertical_align": "center"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "page_glance",
+            "kind": "content",
+            "style": {
+              "background_color": "{theme.colors.backgrounds.page}"
+            },
+            "layout": {
+              "type": "column",
+              "children": [
+                {
+                  "type": "column",
+                  "proportion": 2.0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "page_glance_kicker",
+                      "markdown": "ACA COMPLIANCE",
+                      "style": {
+                        "text_style": "smallText",
+                        "text_color": "{theme.colors.texts.accent}",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 0.8
+                    },
+                    {
+                      "type": "title",
+                      "id": "page_glance_title",
+                      "markdown": "**At a Glance**",
+                      "style": {
+                        "text_style": "largeText",
+                        "text_color": "{theme.colors.texts.default}",
+                        "vertical_align": "center"
+                      },
+                      "proportion": 1.3
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_glance_lead",
+                      "markdown": "Headline results for the period.",
+                      "style": {
+                        "text_style": "normalText",
+                        "vertical_align": "top"
+                      },
+                      "proportion": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "id": "page_glance_rule210",
+                  "decorative": true,
+                  "source": "{theme.assets.images.accent_bar}",
+                  "style": {
+                    "fit": "contain",
+                    "horizontal_align": "left",
+                    "vertical_align": "center"
+                  },
+                  "proportion": 0.05
+                },
+                {
+                  "type": "row",
+                  "proportion": 4.0,
+                  "children": [
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap211",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "page_glance_aca_k_ft_lbl",
+                              "markdown": "**AVG MONTHLY FT EMPLOYEES**",
+                              "style": {
+                                "text_style": "smallText",
+                                "text_color": "{theme.colors.texts.muted}",
+                                "horizontal_align": "center",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.55
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 3.6,
+                              "children": [
+                                {
+                                  "type": "visualization",
+                                  "id": "page_glance_aca_k_ft",
+                                  "visualization": "aca_k_ft",
+                                  "date": "activity_date"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap212",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap213",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "page_glance_aca_k_offer_lbl",
+                              "markdown": "**OFFER RATE (95% TEST)**",
+                              "style": {
+                                "text_style": "smallText",
+                                "text_color": "{theme.colors.texts.muted}",
+                                "horizontal_align": "center",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.55
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 3.6,
+                              "children": [
+                                {
+                                  "type": "visualization",
+                                  "id": "page_glance_aca_k_offer",
+                                  "visualization": "aca_k_offer",
+                                  "date": "activity_date"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap214",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap215",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "page_glance_aca_k_risk_lbl",
+                              "markdown": "**AT-RISK EMPLOYEE-MONTHS**",
+                              "style": {
+                                "text_style": "smallText",
+                                "text_color": "{theme.colors.texts.muted}",
+                                "horizontal_align": "center",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.55
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 3.6,
+                              "children": [
+                                {
+                                  "type": "visualization",
+                                  "id": "page_glance_aca_k_risk",
+                                  "visualization": "aca_k_risk",
+                                  "date": "activity_date"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap216",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap217",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "page_glance_aca_k_exp_lbl",
+                              "markdown": "**PENALTY EXPOSURE**",
+                              "style": {
+                                "text_style": "smallText",
+                                "text_color": "{theme.colors.texts.muted}",
+                                "horizontal_align": "center",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.55
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 3.6,
+                              "children": [
+                                {
+                                  "type": "visualization",
+                                  "id": "page_glance_aca_k_exp",
+                                  "visualization": "aca_k_exp",
+                                  "date": "activity_date"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap218",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "proportion": 5.0,
+                  "children": [
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v_main_lbl",
+                          "markdown": "**Offer Rate by Month**",
+                          "style": {
+                            "text_style": "normalText",
+                            "text_color": "{theme.colors.texts.default}",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 1
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 8,
+                          "children": [
+                            {
+                              "type": "visualization",
+                              "id": "v_main",
+                              "visualization": "aca_offer_trend",
+                              "date": "activity_date"
+                            }
+                          ]
+                        }
+                      ],
+                      "proportion": 2.7
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.panel}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap221",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        },
+                        {
+                          "type": "row",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "page_glance_gap219",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 1,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "page_glance_ih",
+                                  "markdown": "**What to look for**",
+                                  "style": {
+                                    "text_style": "normalText",
+                                    "text_color": "{theme.colors.texts.accent}",
+                                    "vertical_align": "center"
+                                  },
+                                  "proportion": 1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "page_glance_ib",
+                                  "markdown": "The offer rate must stay at or above 95% of full-time employees every month.\n\n**Ask:** which months fell short and why?",
+                                  "style": {
+                                    "text_style": "smallText",
+                                    "text_color": "{theme.colors.texts.muted}"
+                                  },
+                                  "proportion": 5.5
+                                }
+                              ]
+                            },
+                            {
+                              "type": "image",
+                              "id": "page_glance_gap220",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap222",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        }
+                      ],
+                      "proportion": 1.3
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "proportion": 0.6,
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "page_glance_logo",
+                      "decorative": true,
+                      "source": "{theme.assets.images.logo}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "left",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_glance_section",
+                      "proportion": 5,
+                      "decorative": true,
+                      "markdown": "Viventium  ·  ACA Compliance",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "center",
+                        "vertical_align": "bottom"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_glance_pageno",
+                      "proportion": 2,
+                      "decorative": true,
+                      "markdown": "{currentPageNumber} / {totalPages}",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "right",
+                        "vertical_align": "bottom"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "page_1",
+            "kind": "content",
+            "style": {
+              "background_color": "{theme.colors.backgrounds.page}"
+            },
+            "layout": {
+              "type": "column",
+              "children": [
+                {
+                  "type": "column",
+                  "proportion": 2.0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "page_1_kicker",
+                      "markdown": "ACA COMPLIANCE",
+                      "style": {
+                        "text_style": "smallText",
+                        "text_color": "{theme.colors.texts.accent}",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 0.8
+                    },
+                    {
+                      "type": "title",
+                      "id": "page_1_title",
+                      "markdown": "**Workforce Status & 1095-C**",
+                      "style": {
+                        "text_style": "largeText",
+                        "text_color": "{theme.colors.texts.default}",
+                        "vertical_align": "center"
+                      },
+                      "proportion": 1.3
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_1_lead",
+                      "markdown": "ACA status per month and Line 14 offer codes.",
+                      "style": {
+                        "text_style": "normalText",
+                        "vertical_align": "top"
+                      },
+                      "proportion": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "id": "page_1_rule223",
+                  "decorative": true,
+                  "source": "{theme.assets.images.accent_bar}",
+                  "style": {
+                    "fit": "contain",
+                    "horizontal_align": "left",
+                    "vertical_align": "center"
+                  },
+                  "proportion": 0.05
+                },
+                {
+                  "type": "row",
+                  "proportion": 8,
+                  "children": [
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v_1_l_lbl",
+                          "markdown": "**Workforce by ACA Status**",
+                          "style": {
+                            "text_style": "normalText",
+                            "text_color": "{theme.colors.texts.default}",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 1
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 8,
+                          "children": [
+                            {
+                              "type": "visualization",
+                              "id": "v_1_l",
+                              "visualization": "aca_status_trend",
+                              "date": "activity_date"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v_1_r_lbl",
+                          "markdown": "**1095-C Line 14 Codes**",
+                          "style": {
+                            "text_style": "normalText",
+                            "text_color": "{theme.colors.texts.default}",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 1
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 8,
+                          "children": [
+                            {
+                              "type": "visualization",
+                              "id": "v_1_r",
+                              "visualization": "aca_line14",
+                              "date": "activity_date"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.panel}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_1_gap226",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        },
+                        {
+                          "type": "row",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "page_1_gap224",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 1,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "page_1_ih",
+                                  "markdown": "**What to look for**",
+                                  "style": {
+                                    "text_style": "normalText",
+                                    "text_color": "{theme.colors.texts.accent}",
+                                    "vertical_align": "center"
+                                  },
+                                  "proportion": 1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "page_1_ib",
+                                  "markdown": "Variable-hour staff who reach 130 hours on average become full-time for ACA.\n\nLine 14 1H for a full-time employee is a red flag.\n\n**Ask:** are look-back results acted on?",
+                                  "style": {
+                                    "text_style": "smallText",
+                                    "text_color": "{theme.colors.texts.muted}"
+                                  },
+                                  "proportion": 5.5
+                                }
+                              ]
+                            },
+                            {
+                              "type": "image",
+                              "id": "page_1_gap225",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_1_gap227",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        }
+                      ],
+                      "proportion": 0.75
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "proportion": 0.6,
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "page_1_logo",
+                      "decorative": true,
+                      "source": "{theme.assets.images.logo}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "left",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_1_section",
+                      "proportion": 5,
+                      "decorative": true,
+                      "markdown": "Viventium  ·  ACA Compliance",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "center",
+                        "vertical_align": "bottom"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_1_pageno",
+                      "proportion": 2,
+                      "decorative": true,
+                      "markdown": "{currentPageNumber} / {totalPages}",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "right",
+                        "vertical_align": "bottom"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "page_2",
+            "kind": "content",
+            "style": {
+              "background_color": "{theme.colors.backgrounds.page}"
+            },
+            "layout": {
+              "type": "column",
+              "children": [
+                {
+                  "type": "column",
+                  "proportion": 2.0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "page_2_kicker",
+                      "markdown": "ACA COMPLIANCE",
+                      "style": {
+                        "text_style": "smallText",
+                        "text_color": "{theme.colors.texts.accent}",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 0.8
+                    },
+                    {
+                      "type": "title",
+                      "id": "page_2_title",
+                      "markdown": "**Exposure by Location**",
+                      "style": {
+                        "text_style": "largeText",
+                        "text_color": "{theme.colors.texts.default}",
+                        "vertical_align": "center"
+                      },
+                      "proportion": 1.3
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_2_lead",
+                      "markdown": "Where penalty risk sits.",
+                      "style": {
+                        "text_style": "normalText",
+                        "vertical_align": "top"
+                      },
+                      "proportion": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "id": "page_2_rule228",
+                  "decorative": true,
+                  "source": "{theme.assets.images.accent_bar}",
+                  "style": {
+                    "fit": "contain",
+                    "horizontal_align": "left",
+                    "vertical_align": "center"
+                  },
+                  "proportion": 0.05
+                },
+                {
+                  "type": "row",
+                  "proportion": 8,
+                  "children": [
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v_2_l_lbl",
+                          "markdown": "**ACA by Location**",
+                          "style": {
+                            "text_style": "normalText",
+                            "text_color": "{theme.colors.texts.default}",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 1
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 8,
+                          "children": [
+                            {
+                              "type": "visualization",
+                              "id": "v_2_l",
+                              "visualization": "aca_by_location",
+                              "date": "activity_date"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v_2_r_lbl",
+                          "markdown": "**1095-C Line 16 Codes**",
+                          "style": {
+                            "text_style": "normalText",
+                            "text_color": "{theme.colors.texts.default}",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 1
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 8,
+                          "children": [
+                            {
+                              "type": "visualization",
+                              "id": "v_2_r",
+                              "visualization": "aca_line16",
+                              "date": "activity_date"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.panel}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_2_gap231",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        },
+                        {
+                          "type": "row",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "page_2_gap229",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 1,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "page_2_ih",
+                                  "markdown": "**What to look for**",
+                                  "style": {
+                                    "text_style": "normalText",
+                                    "text_color": "{theme.colors.texts.accent}",
+                                    "vertical_align": "center"
+                                  },
+                                  "proportion": 1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "page_2_ib",
+                                  "markdown": "Exposure usually comes from missed offers, not unaffordable plans.\n\n**Ask:** which locations need an offer audit before filing?",
+                                  "style": {
+                                    "text_style": "smallText",
+                                    "text_color": "{theme.colors.texts.muted}"
+                                  },
+                                  "proportion": 5.5
+                                }
+                              ]
+                            },
+                            {
+                              "type": "image",
+                              "id": "page_2_gap230",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_2_gap232",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        }
+                      ],
+                      "proportion": 0.75
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "proportion": 0.6,
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "page_2_logo",
+                      "decorative": true,
+                      "source": "{theme.assets.images.logo}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "left",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_2_section",
+                      "proportion": 5,
+                      "decorative": true,
+                      "markdown": "Viventium  ·  ACA Compliance",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "center",
+                        "vertical_align": "bottom"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_2_pageno",
+                      "proportion": 2,
+                      "decorative": true,
+                      "markdown": "{currentPageNumber} / {totalPages}",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "right",
+                        "vertical_align": "bottom"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

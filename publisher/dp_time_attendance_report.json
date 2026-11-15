@@ -1,0 +1,1217 @@
+{
+  "type": "document",
+  "id": "dp_time_attendance_report",
+  "version": "2",
+  "title": "Time & Attendance Report",
+  "description": "Hours, overtime, punctuality and mobile / geofenced punches.",
+  "tags": [
+    "Time & Attendance"
+  ],
+  "period": {
+    "granularity": "MONTH",
+    "from": -5,
+    "to": -1
+  },
+  "content": {
+    "defaults": {
+      "page_size": "widescreen",
+      "takeaway": {
+        "generation": {
+          "instructions": "Act as a professional workforce analyst for a post-acute care provider (skilled nursing, senior living, home care, home health & hospice, ABA). This report covers Time & Attendance. Write short messages, max 255 characters. Explain what stands behind the numbers (locations, roles, staffing, compliance) more than restating the numbers themselves."
+        }
+      }
+    },
+    "sections": [
+      {
+        "id": "section_main",
+        "pages": [
+          {
+            "id": "page_cover",
+            "kind": "cover",
+            "style": {
+              "background_color": "{theme.colors.backgrounds.page}"
+            },
+            "layout": {
+              "type": "row",
+              "children": [
+                {
+                  "type": "column",
+                  "style": {
+                    "background_color": "{theme.colors.backgrounds.page}"
+                  },
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "page_cover_gap92",
+                      "decorative": true,
+                      "source": "{theme.assets.images.spacer}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "center",
+                        "vertical_align": "center"
+                      },
+                      "proportion": 0.3
+                    },
+                    {
+                      "type": "row",
+                      "proportion": 10,
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_cover_gap90",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.08
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 1,
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "page_cover_gap88",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 1.6
+                            },
+                            {
+                              "type": "text",
+                              "id": "cover_kicker",
+                              "markdown": "TIME & ATTENDANCE  ·  {documentDateRange}",
+                              "style": {
+                                "text_style": "smallText",
+                                "text_color": "{theme.colors.texts.accent}",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.6
+                            },
+                            {
+                              "type": "title",
+                              "id": "cover_title",
+                              "markdown": "**Time & Attendance Report**",
+                              "style": {
+                                "text_style": "largeText",
+                                "text_color": "{theme.colors.texts.default}",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 1.4
+                            },
+                            {
+                              "type": "image",
+                              "id": "page_cover_rule89",
+                              "decorative": true,
+                              "source": "{theme.assets.images.accent_bar}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "left",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.08
+                            },
+                            {
+                              "type": "text",
+                              "id": "cover_meta",
+                              "markdown": "Hours, overtime, punctuality and mobile / geofenced punches.",
+                              "style": {
+                                "text_style": "normalText",
+                                "text_color": "{theme.colors.texts.muted}",
+                                "vertical_align": "top"
+                              },
+                              "proportion": 1.3
+                            },
+                            {
+                              "type": "image",
+                              "id": "cover_logo",
+                              "decorative": true,
+                              "source": "{theme.assets.images.logo}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "left",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.6
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_cover_gap91",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.08
+                        }
+                      ]
+                    },
+                    {
+                      "type": "image",
+                      "id": "page_cover_gap93",
+                      "decorative": true,
+                      "source": "{theme.assets.images.spacer}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "center",
+                        "vertical_align": "center"
+                      },
+                      "proportion": 0.3
+                    }
+                  ],
+                  "proportion": 1
+                },
+                {
+                  "type": "column",
+                  "proportion": 1.25,
+                  "style": {
+                    "background_color": "{theme.colors.backgrounds.card}"
+                  },
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "cover_hero",
+                      "decorative": true,
+                      "source": "{theme.assets.images.dp_time_attendance}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "center",
+                        "vertical_align": "center"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "page_glance",
+            "kind": "content",
+            "style": {
+              "background_color": "{theme.colors.backgrounds.page}"
+            },
+            "layout": {
+              "type": "column",
+              "children": [
+                {
+                  "type": "column",
+                  "proportion": 2.0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "page_glance_kicker",
+                      "markdown": "TIME & ATTENDANCE",
+                      "style": {
+                        "text_style": "smallText",
+                        "text_color": "{theme.colors.texts.accent}",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 0.8
+                    },
+                    {
+                      "type": "title",
+                      "id": "page_glance_title",
+                      "markdown": "**At a Glance**",
+                      "style": {
+                        "text_style": "largeText",
+                        "text_color": "{theme.colors.texts.default}",
+                        "vertical_align": "center"
+                      },
+                      "proportion": 1.3
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_glance_lead",
+                      "markdown": "Headline results for the period.",
+                      "style": {
+                        "text_style": "normalText",
+                        "vertical_align": "top"
+                      },
+                      "proportion": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "id": "page_glance_rule94",
+                  "decorative": true,
+                  "source": "{theme.assets.images.accent_bar}",
+                  "style": {
+                    "fit": "contain",
+                    "horizontal_align": "left",
+                    "vertical_align": "center"
+                  },
+                  "proportion": 0.05
+                },
+                {
+                  "type": "row",
+                  "proportion": 4.0,
+                  "children": [
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap95",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "page_glance_ta_k_hours_lbl",
+                              "markdown": "**WORKED HOURS**",
+                              "style": {
+                                "text_style": "smallText",
+                                "text_color": "{theme.colors.texts.muted}",
+                                "horizontal_align": "center",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.55
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 3.6,
+                              "children": [
+                                {
+                                  "type": "visualization",
+                                  "id": "page_glance_ta_k_hours",
+                                  "visualization": "ta_k_hours",
+                                  "date": "activity_date"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap96",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap97",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "page_glance_ta_k_ot_lbl",
+                              "markdown": "**OVERTIME %**",
+                              "style": {
+                                "text_style": "smallText",
+                                "text_color": "{theme.colors.texts.muted}",
+                                "horizontal_align": "center",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.55
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 3.6,
+                              "children": [
+                                {
+                                  "type": "visualization",
+                                  "id": "page_glance_ta_k_ot",
+                                  "visualization": "ta_k_ot",
+                                  "date": "activity_date"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap98",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap99",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "page_glance_ta_k_late_lbl",
+                              "markdown": "**LATE PUNCH RATE**",
+                              "style": {
+                                "text_style": "smallText",
+                                "text_color": "{theme.colors.texts.muted}",
+                                "horizontal_align": "center",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.55
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 3.6,
+                              "children": [
+                                {
+                                  "type": "visualization",
+                                  "id": "page_glance_ta_k_late",
+                                  "visualization": "ta_k_late",
+                                  "date": "activity_date"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap100",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap101",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "page_glance_ta_k_missed_lbl",
+                              "markdown": "**MISSED PUNCH RATE**",
+                              "style": {
+                                "text_style": "smallText",
+                                "text_color": "{theme.colors.texts.muted}",
+                                "horizontal_align": "center",
+                                "vertical_align": "bottom"
+                              },
+                              "proportion": 0.55
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 3.6,
+                              "children": [
+                                {
+                                  "type": "visualization",
+                                  "id": "page_glance_ta_k_missed",
+                                  "visualization": "ta_k_missed",
+                                  "date": "activity_date"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap102",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.35
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "proportion": 5.0,
+                  "children": [
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v_main_lbl",
+                          "markdown": "**Worked Hours & Overtime % by Month**",
+                          "style": {
+                            "text_style": "normalText",
+                            "text_color": "{theme.colors.texts.default}",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 1
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 8,
+                          "children": [
+                            {
+                              "type": "visualization",
+                              "id": "v_main",
+                              "visualization": "ta_trend",
+                              "date": "activity_date"
+                            }
+                          ]
+                        }
+                      ],
+                      "proportion": 2.7
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.panel}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap105",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        },
+                        {
+                          "type": "row",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "page_glance_gap103",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 1,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "page_glance_ih",
+                                  "markdown": "**What to look for**",
+                                  "style": {
+                                    "text_style": "normalText",
+                                    "text_color": "{theme.colors.texts.accent}",
+                                    "vertical_align": "center"
+                                  },
+                                  "proportion": 1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "page_glance_ib",
+                                  "markdown": "Overtime above a few percent of hours usually points to open positions.\n\n**Ask:** is overtime planned (extra shifts) or caused by call-offs?",
+                                  "style": {
+                                    "text_style": "smallText",
+                                    "text_color": "{theme.colors.texts.muted}"
+                                  },
+                                  "proportion": 5.5
+                                }
+                              ]
+                            },
+                            {
+                              "type": "image",
+                              "id": "page_glance_gap104",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_glance_gap106",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        }
+                      ],
+                      "proportion": 1.3
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "proportion": 0.6,
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "page_glance_logo",
+                      "decorative": true,
+                      "source": "{theme.assets.images.logo}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "left",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_glance_section",
+                      "proportion": 5,
+                      "decorative": true,
+                      "markdown": "Viventium  ·  Time & Attendance",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "center",
+                        "vertical_align": "bottom"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_glance_pageno",
+                      "proportion": 2,
+                      "decorative": true,
+                      "markdown": "{currentPageNumber} / {totalPages}",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "right",
+                        "vertical_align": "bottom"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "page_1",
+            "kind": "content",
+            "style": {
+              "background_color": "{theme.colors.backgrounds.page}"
+            },
+            "layout": {
+              "type": "column",
+              "children": [
+                {
+                  "type": "column",
+                  "proportion": 2.0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "page_1_kicker",
+                      "markdown": "TIME & ATTENDANCE",
+                      "style": {
+                        "text_style": "smallText",
+                        "text_color": "{theme.colors.texts.accent}",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 0.8
+                    },
+                    {
+                      "type": "title",
+                      "id": "page_1_title",
+                      "markdown": "**Overtime & Punctuality**",
+                      "style": {
+                        "text_style": "largeText",
+                        "text_color": "{theme.colors.texts.default}",
+                        "vertical_align": "center"
+                      },
+                      "proportion": 1.3
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_1_lead",
+                      "markdown": "Where overtime sits and when people clock in late.",
+                      "style": {
+                        "text_style": "normalText",
+                        "vertical_align": "top"
+                      },
+                      "proportion": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "id": "page_1_rule107",
+                  "decorative": true,
+                  "source": "{theme.assets.images.accent_bar}",
+                  "style": {
+                    "fit": "contain",
+                    "horizontal_align": "left",
+                    "vertical_align": "center"
+                  },
+                  "proportion": 0.05
+                },
+                {
+                  "type": "row",
+                  "proportion": 8,
+                  "children": [
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v_1_l_lbl",
+                          "markdown": "**Overtime % by Job Role**",
+                          "style": {
+                            "text_style": "normalText",
+                            "text_color": "{theme.colors.texts.default}",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 1
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 8,
+                          "children": [
+                            {
+                              "type": "visualization",
+                              "id": "v_1_l",
+                              "visualization": "ta_ot_role",
+                              "date": "activity_date"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v_1_r_lbl",
+                          "markdown": "**Late Punch Rate by Weekday**",
+                          "style": {
+                            "text_style": "normalText",
+                            "text_color": "{theme.colors.texts.default}",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 1
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 8,
+                          "children": [
+                            {
+                              "type": "visualization",
+                              "id": "v_1_r",
+                              "visualization": "ta_late_dow",
+                              "date": "activity_date"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.panel}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_1_gap110",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        },
+                        {
+                          "type": "row",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "page_1_gap108",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 1,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "page_1_ih",
+                                  "markdown": "**What to look for**",
+                                  "style": {
+                                    "text_style": "normalText",
+                                    "text_color": "{theme.colors.texts.accent}",
+                                    "vertical_align": "center"
+                                  },
+                                  "proportion": 1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "page_1_ib",
+                                  "markdown": "Home care aides carry the most overtime - and wage parity makes it costlier.\n\n**Ask:** does lateness cluster on specific days?",
+                                  "style": {
+                                    "text_style": "smallText",
+                                    "text_color": "{theme.colors.texts.muted}"
+                                  },
+                                  "proportion": 5.5
+                                }
+                              ]
+                            },
+                            {
+                              "type": "image",
+                              "id": "page_1_gap109",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_1_gap111",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        }
+                      ],
+                      "proportion": 0.75
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "proportion": 0.6,
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "page_1_logo",
+                      "decorative": true,
+                      "source": "{theme.assets.images.logo}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "left",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_1_section",
+                      "proportion": 5,
+                      "decorative": true,
+                      "markdown": "Viventium  ·  Time & Attendance",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "center",
+                        "vertical_align": "bottom"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_1_pageno",
+                      "proportion": 2,
+                      "decorative": true,
+                      "markdown": "{currentPageNumber} / {totalPages}",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "right",
+                        "vertical_align": "bottom"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "page_2",
+            "kind": "content",
+            "style": {
+              "background_color": "{theme.colors.backgrounds.page}"
+            },
+            "layout": {
+              "type": "column",
+              "children": [
+                {
+                  "type": "column",
+                  "proportion": 2.0,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "page_2_kicker",
+                      "markdown": "TIME & ATTENDANCE",
+                      "style": {
+                        "text_style": "smallText",
+                        "text_color": "{theme.colors.texts.accent}",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 0.8
+                    },
+                    {
+                      "type": "title",
+                      "id": "page_2_title",
+                      "markdown": "**Clock Methods & Locations**",
+                      "style": {
+                        "text_style": "largeText",
+                        "text_color": "{theme.colors.texts.default}",
+                        "vertical_align": "center"
+                      },
+                      "proportion": 1.3
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_2_lead",
+                      "markdown": "The move to mobile GPS punches and attendance by location.",
+                      "style": {
+                        "text_style": "normalText",
+                        "vertical_align": "top"
+                      },
+                      "proportion": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "id": "page_2_rule112",
+                  "decorative": true,
+                  "source": "{theme.assets.images.accent_bar}",
+                  "style": {
+                    "fit": "contain",
+                    "horizontal_align": "left",
+                    "vertical_align": "center"
+                  },
+                  "proportion": 0.05
+                },
+                {
+                  "type": "row",
+                  "proportion": 8,
+                  "children": [
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v_2_l_lbl",
+                          "markdown": "**Clock Method by Month**",
+                          "style": {
+                            "text_style": "normalText",
+                            "text_color": "{theme.colors.texts.default}",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 1
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 8,
+                          "children": [
+                            {
+                              "type": "visualization",
+                              "id": "v_2_l",
+                              "visualization": "ta_method",
+                              "date": "activity_date"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.card}"
+                      },
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v_2_r_lbl",
+                          "markdown": "**Attendance by Location**",
+                          "style": {
+                            "text_style": "normalText",
+                            "text_color": "{theme.colors.texts.default}",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 1
+                        },
+                        {
+                          "type": "column",
+                          "proportion": 8,
+                          "children": [
+                            {
+                              "type": "visualization",
+                              "id": "v_2_r",
+                              "visualization": "ta_by_location",
+                              "date": "activity_date"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "column",
+                      "style": {
+                        "background_color": "{theme.colors.backgrounds.panel}"
+                      },
+                      "children": [
+                        {
+                          "type": "image",
+                          "id": "page_2_gap115",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        },
+                        {
+                          "type": "row",
+                          "proportion": 10,
+                          "children": [
+                            {
+                              "type": "image",
+                              "id": "page_2_gap113",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            },
+                            {
+                              "type": "column",
+                              "proportion": 1,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "page_2_ih",
+                                  "markdown": "**What to look for**",
+                                  "style": {
+                                    "text_style": "normalText",
+                                    "text_color": "{theme.colors.texts.accent}",
+                                    "vertical_align": "center"
+                                  },
+                                  "proportion": 1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "page_2_ib",
+                                  "markdown": "Mobile punches with geofencing support EVV compliance and cut missed punches.\n\n**Ask:** which locations still rely on kiosks or IVR?",
+                                  "style": {
+                                    "text_style": "smallText",
+                                    "text_color": "{theme.colors.texts.muted}"
+                                  },
+                                  "proportion": 5.5
+                                }
+                              ]
+                            },
+                            {
+                              "type": "image",
+                              "id": "page_2_gap114",
+                              "decorative": true,
+                              "source": "{theme.assets.images.spacer}",
+                              "style": {
+                                "fit": "contain",
+                                "horizontal_align": "center",
+                                "vertical_align": "center"
+                              },
+                              "proportion": 0.07
+                            }
+                          ]
+                        },
+                        {
+                          "type": "image",
+                          "id": "page_2_gap116",
+                          "decorative": true,
+                          "source": "{theme.assets.images.spacer}",
+                          "style": {
+                            "fit": "contain",
+                            "horizontal_align": "center",
+                            "vertical_align": "center"
+                          },
+                          "proportion": 0.3
+                        }
+                      ],
+                      "proportion": 0.75
+                    }
+                  ]
+                },
+                {
+                  "type": "row",
+                  "proportion": 0.6,
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "page_2_logo",
+                      "decorative": true,
+                      "source": "{theme.assets.images.logo}",
+                      "style": {
+                        "fit": "contain",
+                        "horizontal_align": "left",
+                        "vertical_align": "bottom"
+                      },
+                      "proportion": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_2_section",
+                      "proportion": 5,
+                      "decorative": true,
+                      "markdown": "Viventium  ·  Time & Attendance",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "center",
+                        "vertical_align": "bottom"
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "page_2_pageno",
+                      "proportion": 2,
+                      "decorative": true,
+                      "markdown": "{currentPageNumber} / {totalPages}",
+                      "style": {
+                        "text_style": "smallText",
+                        "horizontal_align": "right",
+                        "vertical_align": "bottom"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

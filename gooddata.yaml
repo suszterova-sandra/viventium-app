@@ -1,0 +1,8 @@
+profiles:
+  dev:
+    host: https://sandrasuszterova.demo.cloud.gooddata.com/
+    token: $GOODDATA_API_TOKEN
+    workspace_id: a60f79ad0a99473fafe4d043228d5bd7
+    data_source: 60decaca-4985-4d83-84f1-a2232c38cf3b
+source_dir: analytics
+default_profile: dev

@@ -1,0 +1,418 @@
+{
+  "version": "2",
+  "palette": {
+    "primary": {
+      "base": "#C0532F",
+      "contrast": "#FFFFFF"
+    },
+    "error": {
+      "base": "#D1435B"
+    },
+    "warning": {
+      "base": "#FBBF24"
+    },
+    "success": {
+      "base": "#2F9E7A"
+    },
+    "complementary": {
+      "c0": "#FFFFFF",
+      "c1": "#FBF6F3",
+      "c2": "#FBF6F3",
+      "c3": "#EADFD8",
+      "c4": "#EADFD8",
+      "c5": "#9A98A8",
+      "c6": "#6E6C80",
+      "c7": "#4F4D63",
+      "c8": "#2E3A4F",
+      "c9": "#1E2533"
+    }
+  },
+  "typography": {
+    "font": "https://fonts.gstatic.com/s/notosans/v42/o-0bIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjc5a7du3mhPy0.woff2",
+    "fontBold": "https://fonts.gstatic.com/s/notosans/v42/o-0bIpQlx3QUlC5A4PNB6Ryti20_6n1iPHjc5a7du3mhPy0.woff2"
+  },
+  "button": {
+    "borderRadius": "8",
+    "dropShadow": false,
+    "textCapitalization": false
+  },
+  "modal": {
+    "title": {
+      "color": "#1E2533",
+      "lineColor": "#EADFD8"
+    },
+    "borderColor": "#EADFD8",
+    "borderRadius": "14",
+    "borderWidth": "1",
+    "dropShadow": true,
+    "outsideBackgroundColor": "rgba(0, 0, 0, 0.45)"
+  },
+  "tooltip": {
+    "color": "#FFFFFF",
+    "backgroundColor": "#1E2533"
+  },
+  "chart": {
+    "backgroundColor": "#FFFFFF",
+    "gridColor": "#FBF6F3",
+    "axisColor": "#EADFD8",
+    "axisLabelColor": "#7E7C90",
+    "axisValueColor": "#4F4D63",
+    "legendValueColor": "#4F4D63",
+    "plotLineColor": "#EADFD8",
+    "tooltipBackgroundColor": "#1E2533",
+    "tooltipBorderColor": "#1E2533",
+    "tooltipLabelColor": "#EADFD8",
+    "tooltipValueColor": "#FFFFFF"
+  },
+  "table": {
+    "valueColor": "#2E3A4F",
+    "nullValueColor": "#7E7C90",
+    "hoverBackgroundColor": "#FBF6F3",
+    "loadingIconColor": "#C0532F",
+    "headerLabelColor": "#7E7C90",
+    "headerHoverBackgroundColor": "#FBF6F3",
+    "subtotalBackgroundColor": "#FBF6F3",
+    "totalBackgroundColor": "#EADFD8",
+    "totalValueColor": "#1E2533"
+  },
+  "kpi": {
+    "primaryMeasureColor": "#1E2533",
+    "secondaryInfoColor": "#4F4D63",
+    "value": {
+      "positiveColor": "#2F9E7A",
+      "negativeColor": "#D1435B"
+    }
+  },
+  "dashboards": {
+    "title": {
+      "color": "#1E2533",
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#FFFFFF"
+    },
+    "navigation": {
+      "title": {
+        "color": "#FFFFFF"
+      },
+      "backgroundColor": "#2E3A4F",
+      "borderColor": "#2E3A4F",
+      "item": {
+        "color": "#E6E9EE",
+        "hoverColor": "#FFFFFF",
+        "selectedColor": "#2E3A4F",
+        "selectedBackgroundColor": "#F2B544"
+      }
+    },
+    "filterBar": {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#EADFD8",
+      "filterButton": {
+        "backgroundColor": "#FBF6F3"
+      }
+    },
+    "section": {
+      "title": {
+        "color": "#1E2533",
+        "lineColor": "#EADFD8"
+      },
+      "description": {
+        "color": "#4F4D63"
+      },
+      "backgroundColor": "#FFFFFF"
+    },
+    "content": {
+      "backgroundColor": "#FBF6F3",
+      "widget": {
+        "title": {
+          "color": "#1E2533",
+          "textAlign": "center"
+        },
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#EADFD8",
+        "borderRadius": "14",
+        "borderWidth": "1",
+        "dropShadow": false
+      },
+      "kpiWidget": {
+        "title": {
+          "color": "#E9E3F3",
+          "textAlign": "center"
+        },
+        "backgroundColor": "#2E3A4F",
+        "borderColor": "#2E3A4F",
+        "borderRadius": "14",
+        "borderWidth": "1",
+        "dropShadow": false,
+        "kpi": {
+          "primaryMeasureColor": "#FFFFFF",
+          "secondaryInfoColor": "#E9E3F3",
+          "value": {
+            "positiveColor": "#8FE3C0",
+            "negativeColor": "#FFB3BF"
+          }
+        }
+      }
+    }
+  },
+  "analyticalDesigner": {
+    "title": {
+      "color": "#1E2533"
+    }
+  },
+  "documents": {
+    "visualizationPalette": [
+      "#C0532F",
+      "#2E3A4F",
+      "#F2B544",
+      "#7A9CC6",
+      "#E39A7B",
+      "#5E8C6A",
+      "#9A4A3C",
+      "#B9C3D3",
+      "#F7D58C",
+      "#6E6A78"
+    ],
+    "page": {
+      "backgroundColor": "#FBF6F3"
+    },
+    "colors": {
+      "backgrounds": [
+        {
+          "id": "page",
+          "color": "#FBF6F3"
+        },
+        {
+          "id": "card",
+          "color": "#FFFFFF"
+        },
+        {
+          "id": "panel",
+          "color": "#FBF6F3"
+        },
+        {
+          "id": "accent",
+          "color": "#C0532F"
+        }
+      ],
+      "texts": [
+        {
+          "id": "default",
+          "color": "#1E2533"
+        },
+        {
+          "id": "muted",
+          "color": "#4F4D63"
+        },
+        {
+          "id": "subtle",
+          "color": "#7E7C90"
+        },
+        {
+          "id": "accent",
+          "color": "#C0532F"
+        },
+        {
+          "id": "inverse",
+          "color": "#FFFFFF"
+        }
+      ]
+    },
+    "textStyle": {
+      "typography": {
+        "fontFamily": "Noto Sans, Helvetica Neue, Arial, sans-serif",
+        "fonts": [
+          {
+            "family": "Noto Sans",
+            "url": "https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_0ew.woff2",
+            "weight": 400
+          },
+          {
+            "family": "Noto Sans",
+            "url": "https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYAZ9hiJ-Ek-_0ew.woff2",
+            "weight": 700
+          }
+        ]
+      },
+      "heading": {
+        "color": "#1E2533",
+        "h1": {
+          "fontSize": 4.4,
+          "lineHeight": 5,
+          "color": "#1E2533"
+        },
+        "h2": {
+          "fontSize": 2.1,
+          "lineHeight": 2.7,
+          "color": "#1E2533"
+        },
+        "h3": {
+          "fontSize": 1.6,
+          "lineHeight": 2.1,
+          "color": "#1E2533"
+        },
+        "h4": {
+          "fontSize": 1.35,
+          "lineHeight": 1.8,
+          "color": "#1E2533"
+        },
+        "h5": {
+          "fontSize": 1.2,
+          "lineHeight": 1.6,
+          "color": "#1E2533"
+        },
+        "h6": {
+          "fontSize": 1.1,
+          "lineHeight": 1.5,
+          "color": "#1E2533"
+        }
+      },
+      "paragraph": {
+        "color": "#4F4D63",
+        "largeText": {
+          "fontSize": 1.65,
+          "lineHeight": 2.3,
+          "color": "#1E2533"
+        },
+        "normalText": {
+          "fontSize": 1.35,
+          "lineHeight": 1.9,
+          "color": "#4F4D63"
+        },
+        "smallText": {
+          "fontSize": 1.1,
+          "lineHeight": 1.5,
+          "color": "#7E7C90"
+        }
+      }
+    }
+  },
+  "header": {
+    "backgroundColor": "#2E3A4F",
+    "color": "#FFFFFF",
+    "activeColor": "#F2B544"
+  },
+  "assets": {
+    "logos": [
+      {
+        "id": "logo",
+        "url": "https://placehold.co/600x140/FFFFFF/C0532F/png?text=HearthSide+Home+Care&font=montserrat",
+        "title": "HearthSide Home Care logo",
+        "altText": "HearthSide Home Care logo"
+      }
+    ],
+    "backgrounds": [
+      {
+        "id": "cover_bg",
+        "url": "https://placehold.co/1920x1080/2E3A4F/2E3A4F/png",
+        "title": "Cover background",
+        "altText": "Cover background"
+      },
+      {
+        "id": "section_bg",
+        "url": "https://placehold.co/1920x1080/2E3A4F/2E3A4F/png",
+        "title": "Section background",
+        "altText": "Section background"
+      }
+    ],
+    "images": [
+      {
+        "id": "cover_bg",
+        "url": "https://placehold.co/1920x1080/2E3A4F/2E3A4F/png",
+        "title": "Cover background",
+        "altText": "Cover background"
+      },
+      {
+        "id": "section_bg",
+        "url": "https://placehold.co/1920x1080/2E3A4F/2E3A4F/png",
+        "title": "Section background",
+        "altText": "Section background"
+      },
+      {
+        "id": "accent_bar",
+        "url": "https://placehold.co/1600x12/F2B544/F2B544/png",
+        "title": "Accent rule",
+        "altText": "Accent rule"
+      },
+      {
+        "id": "logo",
+        "url": "https://placehold.co/600x140/FFFFFF/C0532F/png?text=HearthSide+Home+Care&font=montserrat",
+        "title": "HearthSide Home Care logo",
+        "altText": "HearthSide Home Care logo"
+      },
+      {
+        "id": "spacer",
+        "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=",
+        "title": "Spacer",
+        "altText": ""
+      },
+      {
+        "id": "dp_applicant_tracking",
+        "url": "https://viventium.com/hs-fs/hubfs/applicant-tracking-product-image.webp",
+        "title": "Applicant Tracking",
+        "altText": "Applicant Tracking"
+      },
+      {
+        "id": "dp_onboarding",
+        "url": "https://viventium.com/hs-fs/hubfs/onboarding-product-suite.webp",
+        "title": "Onboarding",
+        "altText": "Onboarding"
+      },
+      {
+        "id": "dp_scheduling",
+        "url": "https://viventium.com/hs-fs/hubfs/scheduling-time-product-suite-image.webp",
+        "title": "Scheduling",
+        "altText": "Scheduling"
+      },
+      {
+        "id": "dp_time_attendance",
+        "url": "https://viventium.com/hs-fs/hubfs/2026%20Marketing/Images/Website/T%26A%20Product%20Suite.png?width=1200",
+        "title": "Time Attendance",
+        "altText": "Time Attendance"
+      },
+      {
+        "id": "dp_payroll",
+        "url": "https://viventium.com/hs-fs/hubfs/payroll-product-suite-image.webp",
+        "title": "Payroll",
+        "altText": "Payroll"
+      },
+      {
+        "id": "dp_on_demand_pay",
+        "url": "https://viventium.com/hs-fs/hubfs/Business-intelligence-product-suite-image.webp",
+        "title": "On Demand Pay",
+        "altText": "On Demand Pay"
+      },
+      {
+        "id": "dp_benefits",
+        "url": "https://viventium.com/hs-fs/hubfs/benefits-aca-product-image.webp",
+        "title": "Benefits",
+        "altText": "Benefits"
+      },
+      {
+        "id": "dp_aca_compliance",
+        "url": "https://viventium.com/hs-fs/hubfs/ACA-compliance-product-suite-image.webp",
+        "title": "Aca Compliance",
+        "altText": "Aca Compliance"
+      },
+      {
+        "id": "dp_lms",
+        "url": "https://viventium.com/hs-fs/hubfs/lms-product-image.webp",
+        "title": "Lms",
+        "altText": "Lms"
+      },
+      {
+        "id": "dp_exclusion_monitoring",
+        "url": "https://viventium.com/hs-fs/hubfs/HR%20manager%20at%20desk_1%20(1).jpg?width=1200",
+        "title": "Exclusion Monitoring",
+        "altText": "Exclusion Monitoring"
+      },
+      {
+        "id": "dp_hr",
+        "url": "https://viventium.com/hs-fs/hubfs/hr-product-image.webp",
+        "title": "Hr",
+        "altText": "Hr"
+      }
+    ]
+  },
+  "images": {
+    "logo": "url(https://placehold.co/600x140/2E3A4F/FFFFFF/png?text=HearthSide+Home+Care&font=montserrat)"
+  }
+}

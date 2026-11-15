@@ -1,0 +1,6 @@
+client_id,client_name,tier,product_bundle,workspace_id,workspace_name,locations
+riverstone,Riverstone Health Partners,AI,ALL,riverstone,Riverstone Health Partners · AI tier (dedicated),RSH-BKN|RSH-YON|RSH-PAR|RSH-TMS
+hearthside,HearthSide Home Care,Analytics,ALL,hearthside,HearthSide Home Care · Analytics tier (dedicated),HSC-QNS|HSC-HEM|HSC-STM|HSC-HOU
+maplehollow,Maple Hollow Senior Living,Base,PAYROLL+HR,shard_base_01,Base Shard 01 · shared (view only),MHL-LAN|MHL-DUB|MHL-SRQ|MHL-AVL
+willowbend,Willowbend Home Health & Hospice,Base,HR+BENEFITS,shard_base_01,Base Shard 01 · shared (view only),WBH-NSH|WBH-KNX|WBH-ATL|WBH-BHM
+littleoak,Little Oak Behavioral Health,Base,SCHEDULING+T&A,shard_base_01,Base Shard 01 · shared (view only),LOB-SAN|LOB-PHX|LOB-AUS
