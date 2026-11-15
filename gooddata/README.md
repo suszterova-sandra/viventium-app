@@ -15,7 +15,8 @@ export PATH=~/.nvm/versions/node/v22.14.0/bin:$PATH  # gd CLI
 
 python3 gooddata/build_analytics.py   # writes analytics/*.yaml and gooddata/data_products.json
 gd validate && gd deploy              # parent workspace
-python3 gooddata/provision.py         # WDF client_id + 5 child workspaces (or --client <id>)
+python3 gooddata/provision.py         # WDF client_id + dedicated client workspaces (or --client <id>)
+python3 tenancy/reconcile.py          # full tenancy from tenant_mapping.csv: tiers, Base shard, users, filters
 python3 gooddata/apply_permissions.py # object-level permissions per data product (re-run after every deploy)
 python3 theme/build_themes.py --deploy        # Viventium theme on the parent + a brand theme per client workspace
 python3 publisher/build_reports.py --deploy   # one publisher report per data product (documents dp_<product>_report)
@@ -52,15 +53,13 @@ ACA trends show 11 of the last 12 months, because the current month isn't closed
 The workspace data filter `client_id` uses the column `wdf__client_id`, and it's set on every tenant table.
 `job_roles`, `courses` and `pay_periods` are global tables without the filter.
 
-The child workspaces inherit everything from the parent. Each one is filtered to a single client:
+The child workspaces inherit everything from the parent. They're reconciled from `tenancy/tenant_mapping.csv` by `tenancy/reconcile.py`:
 
-| Workspace ID | Client |
-|---|---|
-| `riverstone` | Riverstone Health Partners |
-| `maplehollow` | Maple Hollow Senior Living |
-| `hearthside` | HearthSide Home Care |
-| `willowbend` | Willowbend Home Health & Hospice |
-| `littleoak` | Little Oak Behavioral Health |
+| Workspace ID | Tier | Clients |
+|---|---|---|
+| `riverstone` | AI tier, dedicated | Riverstone Health Partners |
+| `hearthside` | Analytics tier, dedicated | HearthSide Home Care |
+| `shard_base_01` | Base shard, shared | Maple Hollow Senior Living, Willowbend Home Health & Hospice, Little Oak Behavioral Health |
 
 ## Data products and object-level permissions
 

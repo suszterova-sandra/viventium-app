@@ -8,7 +8,9 @@ Build the Viventium themes and chart palettes, and optionally deploy + activate 
 
 Themes (one per workspace; a theme can't be assigned to a single dashboard):
 - viventium               -> parent "Viventium" (purple #591490 / #8C21E7, gold #FFB630, Noto Sans, real logo)
-- viventium_<client_id>   -> the 5 child workspaces, each in its own (fictional) client brand
+- viventium_<client_id>   -> each client's own (fictional) brand. Activated on the dedicated workspaces
+                             (riverstone, hearthside); clients in the shared Base shard see the Viventium
+                             theme, their brand theme is kept ready for an upgrade to a dedicated workspace.
 
 Structure comes from _template_theme.json (the conference dark-lime template) and is recoloured by role,
 exactly like conference_env/theme/build_themes.py, so every theme stays structurally identical.
@@ -95,7 +97,7 @@ THEMES = {
              "#B9C6D3"],
         header=("#12355B", "#FFFFFF", "#E0A526"), logo=wordmark("Riverstone Health", "#12355B"),
         header_logo=wordmark("Riverstone Health", "#FFFFFF", "12355B"))),
-    "viventium_maplehollow": dict(name="Maple Hollow Senior Living", ws="maplehollow", brand="Maple Hollow Senior Living", **light(
+    "viventium_maplehollow": dict(name="Maple Hollow Senior Living", ws=None, brand="Maple Hollow Senior Living", **light(
         primary="#A23B2A", deep="#6E1F2A", accent="#E8913A", ink="#2B1215", tint="#FBF6F2", line="#EDE0D8",
         viz=["#6E1F2A", "#D9692B", "#E8B04A", "#8C6A4F", "#C9A27E", "#4F7C6A", "#B5524A", "#3E3A4F", "#F0CFA0",
              "#A38C8C"],
@@ -106,13 +108,13 @@ THEMES = {
              "#6E6A78"],
         header=("#2E3A4F", "#FFFFFF", "#F2B544"), logo=wordmark("HearthSide Home Care", "#C0532F"),
         header_logo=wordmark("HearthSide Home Care", "#FFFFFF", "2E3A4F"))),
-    "viventium_willowbend": dict(name="Willowbend Home Health & Hospice", ws="willowbend", brand="Willowbend", **light(
+    "viventium_willowbend": dict(name="Willowbend Home Health & Hospice", ws=None, brand="Willowbend", **light(
         primary="#3E7A63", deep="#24493D", accent="#B9A3D6", ink="#14261F", tint="#F4F8F5", line="#DCE7E0",
         viz=["#24493D", "#7FA36B", "#B9A3D6", "#3E7A63", "#D8B45C", "#6F8FA8", "#A5C49A", "#7D5E8C", "#C9D6CC",
              "#4F4D63"],
         header=("#24493D", "#FFFFFF", "#B9A3D6"), logo=wordmark("Willowbend", "#24493D"),
         header_logo=wordmark("Willowbend", "#FFFFFF", "24493D"))),
-    "viventium_littleoak": dict(name="Little Oak Behavioral Health", ws="littleoak", brand="Little Oak", **light(
+    "viventium_littleoak": dict(name="Little Oak Behavioral Health", ws=None, brand="Little Oak", **light(
         primary="#2E7D4F", deep="#1F5537", accent="#F6C343", ink="#13261A", tint="#F5FAF6", line="#DCEBDF",
         viz=["#2E7D4F", "#F6C343", "#4BA3D9", "#F28B5B", "#8CC084", "#1F5537", "#A98BD6", "#F7DE8F", "#6C7A89",
              "#B6DCC2"],
@@ -230,7 +232,10 @@ def main():
         (HERE / f"{tid}_theme.json").write_text(json.dumps(theme, indent=2) + "\n")
         (HERE / f"{tid}_palette.json").write_text(json.dumps(palette(cfg["viz"]), indent=2) + "\n")
         print(f"wrote {tid}_theme.json ({size} chars)")
-        if "--deploy" in sys.argv:
+        if "--deploy" in sys.argv and not cfg["ws"]:
+            # client is in the shared Base shard (Viventium theme); the brand theme is kept for an upgrade
+            print("  theme", upsert("themes", tid, f"Viventium – {cfg['name']}", theme), "(no workspace: client is in the Base shard)")
+        elif "--deploy" in sys.argv:
             print("  theme", upsert("themes", tid, f"Viventium – {cfg['name']}", theme),
                   "| palette", upsert("colorPalettes", tid, f"Viventium – {cfg['name']}", palette(cfg["viz"])),
                   "| ACTIVE_THEME", activate(cfg["ws"], "ACTIVE_THEME", {"id": tid, "type": "theme"}),

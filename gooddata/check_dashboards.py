@@ -20,7 +20,7 @@ import urllib.request
 
 HOST = os.environ.get("GD_HOST", "https://sandrasuszterova.demo.cloud.gooddata.com")
 PARENT = "a60f79ad0a99473fafe4d043228d5bd7"
-CLIENTS = ["riverstone", "maplehollow", "hearthside", "willowbend", "littleoak"]
+CLIENTS = ["riverstone", "hearthside", "shard_base_01"]  # see tenancy/tenant_mapping.csv
 DASH_DATE = {"granularity": "MONTH", "from": -11, "to": 0}
 
 

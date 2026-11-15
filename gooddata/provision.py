@@ -4,7 +4,11 @@ Provision the Viventium multitenant setup in GoodData Cloud. Safe to re-run (exi
 
     set -a; . ../.env; set +a
     python3 provision.py                     # WDF + all client workspaces
-    python3 provision.py --client littleoak  # one client only (live provisioning demo)
+    python3 provision.py --client riverstone # one client only (live provisioning demo)
+
+Only the dedicated client workspaces live here. The full tenancy (dedicated workspaces + the shared Base
+shard, client groups, user data filters, personas) is reconciled from tenancy/tenant_mapping.csv by
+tenancy/reconcile.py, which is the source of truth.
 
 Run `gd deploy` (from viventium/) between creating the WDF and creating the clients the first time,
 because the datasets reference the `client_id` filter.
@@ -21,10 +25,7 @@ PARENT = os.environ.get("GD_PARENT", "a60f79ad0a99473fafe4d043228d5bd7")
 JSONAPI = "application/vnd.gooddata.api+json"
 CLIENTS = {
     "riverstone": "Riverstone Health Partners",
-    "maplehollow": "Maple Hollow Senior Living",
     "hearthside": "HearthSide Home Care",
-    "willowbend": "Willowbend Home Health & Hospice",
-    "littleoak": "Little Oak Behavioral Health",
 }
 
 

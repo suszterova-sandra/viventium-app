@@ -127,114 +127,6 @@
    ]
   },
   {
-   "id": "littleoak",
-   "name": "Little Oak Behavioral Health",
-   "isParent": false,
-   "themeId": "viventium_littleoak",
-   "permissions": [],
-   "hierarchyPermissions": [],
-   "dashboards": [
-    {
-     "id": "p01_applicant_tracking",
-     "title": "1. Applicant Tracking"
-    },
-    {
-     "id": "p02_onboarding",
-     "title": "2. Onboarding"
-    },
-    {
-     "id": "p03_scheduling",
-     "title": "3. Scheduling"
-    },
-    {
-     "id": "p04_time_attendance",
-     "title": "4. Time & Attendance"
-    },
-    {
-     "id": "p05_payroll",
-     "title": "5. Payroll"
-    },
-    {
-     "id": "p06_on_demand_pay",
-     "title": "6. On-Demand Pay"
-    },
-    {
-     "id": "p07_benefits",
-     "title": "7. Benefits Administration"
-    },
-    {
-     "id": "p08_aca",
-     "title": "8. ACA Compliance"
-    },
-    {
-     "id": "p09_lms",
-     "title": "9. Learning (LMS)"
-    },
-    {
-     "id": "p10_exclusion_monitoring",
-     "title": "10. Exclusion Monitoring"
-    },
-    {
-     "id": "p11_hr",
-     "title": "11. HR & Workforce"
-    }
-   ]
-  },
-  {
-   "id": "maplehollow",
-   "name": "Maple Hollow Senior Living",
-   "isParent": false,
-   "themeId": "viventium_maplehollow",
-   "permissions": [],
-   "hierarchyPermissions": [],
-   "dashboards": [
-    {
-     "id": "p01_applicant_tracking",
-     "title": "1. Applicant Tracking"
-    },
-    {
-     "id": "p02_onboarding",
-     "title": "2. Onboarding"
-    },
-    {
-     "id": "p03_scheduling",
-     "title": "3. Scheduling"
-    },
-    {
-     "id": "p04_time_attendance",
-     "title": "4. Time & Attendance"
-    },
-    {
-     "id": "p05_payroll",
-     "title": "5. Payroll"
-    },
-    {
-     "id": "p06_on_demand_pay",
-     "title": "6. On-Demand Pay"
-    },
-    {
-     "id": "p07_benefits",
-     "title": "7. Benefits Administration"
-    },
-    {
-     "id": "p08_aca",
-     "title": "8. ACA Compliance"
-    },
-    {
-     "id": "p09_lms",
-     "title": "9. Learning (LMS)"
-    },
-    {
-     "id": "p10_exclusion_monitoring",
-     "title": "10. Exclusion Monitoring"
-    },
-    {
-     "id": "p11_hr",
-     "title": "11. HR & Workforce"
-    }
-   ]
-  },
-  {
    "id": "riverstone",
    "name": "Riverstone Health Partners \u00b7 AI tier (dedicated)",
    "isParent": false,
@@ -406,180 +298,9 @@
      "title": "11. HR & Workforce"
     }
    ]
-  },
-  {
-   "id": "willowbend",
-   "name": "Willowbend Home Health & Hospice",
-   "isParent": false,
-   "themeId": "viventium_willowbend",
-   "permissions": [],
-   "hierarchyPermissions": [],
-   "dashboards": [
-    {
-     "id": "p01_applicant_tracking",
-     "title": "1. Applicant Tracking"
-    },
-    {
-     "id": "p02_onboarding",
-     "title": "2. Onboarding"
-    },
-    {
-     "id": "p03_scheduling",
-     "title": "3. Scheduling"
-    },
-    {
-     "id": "p04_time_attendance",
-     "title": "4. Time & Attendance"
-    },
-    {
-     "id": "p05_payroll",
-     "title": "5. Payroll"
-    },
-    {
-     "id": "p06_on_demand_pay",
-     "title": "6. On-Demand Pay"
-    },
-    {
-     "id": "p07_benefits",
-     "title": "7. Benefits Administration"
-    },
-    {
-     "id": "p08_aca",
-     "title": "8. ACA Compliance"
-    },
-    {
-     "id": "p09_lms",
-     "title": "9. Learning (LMS)"
-    },
-    {
-     "id": "p10_exclusion_monitoring",
-     "title": "10. Exclusion Monitoring"
-    },
-    {
-     "id": "p11_hr",
-     "title": "11. HR & Workforce"
-    }
-   ]
   }
  ],
  "themes": {
-  "viventium_littleoak": {
-   "id": "viventium_littleoak",
-   "name": "Viventium \u2013 Little Oak Behavioral Health",
-   "palette": {
-    "primary": {
-     "base": "#2E7D4F",
-     "contrast": "#FFFFFF"
-    },
-    "error": {
-     "base": "#D1435B"
-    },
-    "warning": {
-     "base": "#FBBF24"
-    },
-    "success": {
-     "base": "#2F9E7A"
-    },
-    "complementary": {
-     "c0": "#FFFFFF",
-     "c1": "#F5FAF6",
-     "c2": "#F5FAF6",
-     "c3": "#DCEBDF",
-     "c4": "#DCEBDF",
-     "c5": "#9A98A8",
-     "c6": "#6E6C80",
-     "c7": "#4F4D63",
-     "c8": "#1F5537",
-     "c9": "#13261A"
-    }
-   },
-   "logo": "https://placehold.co/600x140/FFFFFF/2E7D4F/png?text=Little+Oak+ABA&font=montserrat",
-   "cover": "https://placehold.co/1920x1080/1F5537/1F5537/png",
-   "accent": "#2E7D4F",
-   "header": {
-    "backgroundColor": "#FFFFFF",
-    "color": "#1F5537",
-    "activeColor": "#2E7D4F"
-   }
-  },
-  "viventium_hearthside": {
-   "id": "viventium_hearthside",
-   "name": "Viventium \u2013 HearthSide Home Care",
-   "palette": {
-    "primary": {
-     "base": "#C0532F",
-     "contrast": "#FFFFFF"
-    },
-    "error": {
-     "base": "#D1435B"
-    },
-    "warning": {
-     "base": "#FBBF24"
-    },
-    "success": {
-     "base": "#2F9E7A"
-    },
-    "complementary": {
-     "c0": "#FFFFFF",
-     "c1": "#FBF6F3",
-     "c2": "#FBF6F3",
-     "c3": "#EADFD8",
-     "c4": "#EADFD8",
-     "c5": "#9A98A8",
-     "c6": "#6E6C80",
-     "c7": "#4F4D63",
-     "c8": "#2E3A4F",
-     "c9": "#1E2533"
-    }
-   },
-   "logo": "https://placehold.co/600x140/FFFFFF/C0532F/png?text=HearthSide+Home+Care&font=montserrat",
-   "cover": "https://placehold.co/1920x1080/2E3A4F/2E3A4F/png",
-   "accent": "#F2B544",
-   "header": {
-    "backgroundColor": "#2E3A4F",
-    "color": "#FFFFFF",
-    "activeColor": "#F2B544"
-   }
-  },
-  "viventium_maplehollow": {
-   "id": "viventium_maplehollow",
-   "name": "Viventium \u2013 Maple Hollow Senior Living",
-   "palette": {
-    "primary": {
-     "base": "#A23B2A",
-     "contrast": "#FFFFFF"
-    },
-    "error": {
-     "base": "#D1435B"
-    },
-    "warning": {
-     "base": "#FBBF24"
-    },
-    "success": {
-     "base": "#2F9E7A"
-    },
-    "complementary": {
-     "c0": "#FFFFFF",
-     "c1": "#FBF6F2",
-     "c2": "#FBF6F2",
-     "c3": "#EDE0D8",
-     "c4": "#EDE0D8",
-     "c5": "#9A98A8",
-     "c6": "#6E6C80",
-     "c7": "#4F4D63",
-     "c8": "#6E1F2A",
-     "c9": "#2B1215"
-    }
-   },
-   "logo": "https://placehold.co/600x140/FFFFFF/6E1F2A/png?text=Maple+Hollow&font=montserrat",
-   "cover": "https://placehold.co/1920x1080/6E1F2A/6E1F2A/png",
-   "accent": "#D9692B",
-   "header": {
-    "backgroundColor": "#FFFFFF",
-    "color": "#6E1F2A",
-    "activeColor": "#D9692B"
-   }
-  },
   "viventium": {
    "id": "viventium",
    "name": "Viventium \u2013 Viventium",
@@ -617,45 +338,6 @@
     "backgroundColor": "#FFFFFF",
     "color": "#3A394E",
     "activeColor": "#8C21E7"
-   }
-  },
-  "viventium_willowbend": {
-   "id": "viventium_willowbend",
-   "name": "Viventium \u2013 Willowbend Home Health & Hospice",
-   "palette": {
-    "primary": {
-     "base": "#3E7A63",
-     "contrast": "#FFFFFF"
-    },
-    "error": {
-     "base": "#D1435B"
-    },
-    "warning": {
-     "base": "#FBBF24"
-    },
-    "success": {
-     "base": "#2F9E7A"
-    },
-    "complementary": {
-     "c0": "#FFFFFF",
-     "c1": "#F4F8F5",
-     "c2": "#F4F8F5",
-     "c3": "#DCE7E0",
-     "c4": "#DCE7E0",
-     "c5": "#9A98A8",
-     "c6": "#6E6C80",
-     "c7": "#4F4D63",
-     "c8": "#24493D",
-     "c9": "#14261F"
-    }
-   },
-   "logo": "https://placehold.co/600x140/FFFFFF/24493D/png?text=Willowbend&font=montserrat",
-   "cover": "https://placehold.co/1920x1080/24493D/24493D/png",
-   "accent": "#B9A3D6",
-   "header": {
-    "backgroundColor": "#24493D",
-    "color": "#FFFFFF",
-    "activeColor": "#B9A3D6"
    }
   },
   "viventium_riverstone": {
@@ -696,6 +378,45 @@
     "color": "#FFFFFF",
     "activeColor": "#E0A526"
    }
+  },
+  "viventium_hearthside": {
+   "id": "viventium_hearthside",
+   "name": "Viventium \u2013 HearthSide Home Care",
+   "palette": {
+    "primary": {
+     "base": "#C0532F",
+     "contrast": "#FFFFFF"
+    },
+    "error": {
+     "base": "#D1435B"
+    },
+    "warning": {
+     "base": "#FBBF24"
+    },
+    "success": {
+     "base": "#2F9E7A"
+    },
+    "complementary": {
+     "c0": "#FFFFFF",
+     "c1": "#FBF6F3",
+     "c2": "#FBF6F3",
+     "c3": "#EADFD8",
+     "c4": "#EADFD8",
+     "c5": "#9A98A8",
+     "c6": "#6E6C80",
+     "c7": "#4F4D63",
+     "c8": "#2E3A4F",
+     "c9": "#1E2533"
+    }
+   },
+   "logo": "https://placehold.co/600x140/FFFFFF/C0532F/png?text=HearthSide+Home+Care&font=montserrat",
+   "cover": "https://placehold.co/1920x1080/2E3A4F/2E3A4F/png",
+   "accent": "#F2B544",
+   "header": {
+    "backgroundColor": "#2E3A4F",
+    "color": "#FFFFFF",
+    "activeColor": "#F2B544"
+   }
   }
  },
  "wdfs": [
@@ -707,12 +428,6 @@
     "hearthside": [
      "hearthside"
     ],
-    "littleoak": [
-     "littleoak"
-    ],
-    "maplehollow": [
-     "maplehollow"
-    ],
     "riverstone": [
      "riverstone"
     ],
@@ -720,9 +435,6 @@
      "maplehollow",
      "willowbend",
      "littleoak"
-    ],
-    "willowbend": [
-     "willowbend"
     ]
    }
   }
